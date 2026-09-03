@@ -1,0 +1,227 @@
+{
+  //背景について
+  "Background": {
+    //背景画像について
+    "Image": {
+      //背景画像のX(左が0。単位はpx)
+      "X": 0,
+      //背景画像のY座標(上が0。単位はpx)
+      "Y": 0,
+      //背景画像の番号。画像ファイル名と連動。この場合、0000.pngや0.png
+      "ImageIndex": 0
+    },
+    //プレビュー画像の設定。この辺はいじらなくてよい
+    "Preview1": {
+      "X": 18,
+      "Y": 17,
+      "ImageIndex": 1
+    },
+    "Preview2": {
+      "X": 18,
+      "Y": 17,
+      "ImageIndex": 1
+    },
+    "Preview3": {
+      "X": 18,
+      "Y": 17,
+      "ImageIndex": 1
+    }
+  },
+  //時刻表示について
+  "Time": {
+    //時刻の時について
+    "Hours": {
+      //時刻の時の10の位について
+      "Tens": {
+        //座標指定
+        "X": 0,
+        "Y": 100,
+        //0の画像番号を指定
+        "ImageIndex": 21,
+        //画像の連番の指定。この場合、0~9までの数字の画像なので10
+        //21に0の画像、22に1の画像...30に9の画像を配置する必要がある
+        "ImagesCount": 10
+      },
+      //時刻の1の位について
+      "Ones": {
+        //座標指定
+        "X": 26,
+        "Y": 100,
+        //0の画像番号を指定
+        "ImageIndex": 21,
+        //画像の連番の指定
+        "ImagesCount": 10
+      }
+    },
+    //時刻の分について
+    "Minutes": {
+      //10の位
+      "Tens": {
+        //座標
+        "X": 65,
+        "Y": 100,
+        //画像番号
+        "ImageIndex": 21,
+        //画像連番
+        "ImagesCount": 10
+      },
+      //1の位
+      "Ones": {
+        //座標
+        "X": 91,
+        "Y": 100,
+        //画像番号
+        "ImageIndex": 21,
+        //画像連番
+        "ImagesCount": 10
+      }
+    },
+    //よくわかんないです。あっても無くても動いた
+    "UnknownV11": 0
+  },
+  //日付表示について
+  "Date": {
+    //月、日、年について
+    "MonthAndDayAndYear": {
+      //直線に表示する
+      "OneLine": {
+        //数値の表示について
+        "Number": {
+          //左上の座標
+          "TopLeftX": 56,
+          "TopLeftY": 73,
+          //右下の座標
+          "BottomRightX": 126,
+          "BottomRightY": 150,
+          //左上基準で配置
+          "Alignment": "TopLeft",
+          //数字間の余白
+          "SpacingX": 0,
+          "SpacingY": 0,
+          //画像番号
+          "ImageIndex": 31,
+          //画像の連番
+          "ImagesCount": 10
+        },
+        //月、日、年を区切る線の画像番号
+        "DelimiterImageIndex": 20
+      },
+      //月を二桁で表示
+      "TwoDigitsMonth": true,
+      //日を二桁で表示
+      "TwoDigitsDay": true
+      //年は表示しない
+    },
+    //曜日を画像で表示する
+    "ENWeekDays": {
+      //座標
+      "X": 20,
+      "Y": 70,
+      //画像番号
+      "ImageIndex": 41,
+      //曜日なので画像数は7。
+      //月曜から始まり、日曜で終わる
+      "ImagesCount": 7
+    }
+  },
+  //バッテリー表示について
+  "Battery": {
+    //バッテリー残の数値の表示について
+    "BatteryText": {
+      //装飾
+      "Coordinates": {
+        //左上座標
+        "TopLeftX": 50,
+        "TopLeftY": 4,
+        //右下座標
+        "BottomRightX": 95,
+        "BottomRightY": 6,
+        //左上基準
+        "Alignment": "TopRight",
+        //x座標の余白1px
+        "SpacingX": 1,
+        "SpacingY": 0,
+        //画像番号
+        "ImageIndex": 64,
+        //画像数
+        "ImagesCount": 10
+      }
+    },
+    //バッテリー画像について
+    "BatteryIcon": {
+      //座標
+      "X": 100,
+      "Y": 5,
+      //画像番号
+      "ImageIndex": 54,
+      //画像連番。今回は、バッテリー残量が少→多を10枚の画像で表現している
+      "ImagesCount": 10
+    }
+  },
+  //天気の表示について
+  "Weather": {
+    //画像について
+    "Icon": {
+      //カスタムアイコンを使う
+      "CustomIcon": {
+        //座標
+        "X": 3,
+        "Y": 2,
+        //画像番号
+        "ImageIndex": 133,
+        //画像連番
+        "ImagesCount": 26
+      }
+    }
+  },
+  //アクティビティー系(心拍とか歩数とか、そういう活動を測る系統)
+  "Activity": {
+    //心拍の表示について
+    "Pulse": {
+      //数値について
+      "Number": {
+        //左上座標
+        "TopLeftX": 55,
+        "TopLeftY": 258,
+        //右下座標
+        "BottomRightX": 126,
+        "BottomRightY": 258,
+        //左基準
+        "Alignment": "Left",
+        //数値の余白
+        "SpacingX": 4,
+        "SpacingY": 0,
+        //画像番号
+        "ImageIndex": 101,
+        //画像連番
+        "ImagesCount": 10
+      },
+      //心拍数が計測できなかった場合の画像
+      "NoDataImageIndex": 111
+    },
+    "UnknownV7": 0
+  },
+  //その他
+  "Other": {
+    //アニメーション
+    "Animation": [
+      {
+        //アニメーション画像について
+        "AnimationImages": {
+          //座標
+          "X": 0,
+          "Y": 150,
+          //画像番号
+          "ImageIndex": 4,
+          //画像数
+          "ImagesCount": 2
+        },
+        //アニメーションの速度。今回は約1秒で一周するように調整
+        "Speed": 1750,
+        //リピート数
+        "RepeatCount": 100,
+        "UnknownTF4": 0
+      }
+    ]
+  }
+}
