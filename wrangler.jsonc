@@ -1,0 +1,13 @@
+// soncho-works.com (apex) を Cloudflare Workers Static Assets で配信する設定。
+// 本番のデプロイは platform が Cloudflare 側で Workers Builds (Git 連携) を設定する。
+// この repo に Cloudflare の秘密は置かない。
+//
+// プレビュー: npx wrangler deploy  (ローカルの Cloudflare 認証で workers.dev に上がる)
+{
+  "name": "soncho-works-site",
+  "compatibility_date": "2026-09-03",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

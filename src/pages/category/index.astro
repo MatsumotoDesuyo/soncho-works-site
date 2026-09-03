@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allCategories } from '../../lib/posts';
+---
+
+<BaseLayout title="カテゴリー">
+  <h1>カテゴリー</h1>
+  <ul class="category-list">
+    {
+      allCategories.map((category) => (
+        <li>
+          <a href={`/category/${category.slug}/`}>{category.name}</a> ({category.count})
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

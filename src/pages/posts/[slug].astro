@@ -1,0 +1,46 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import { categoryName, formatDate } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description} ogType="article">
+  <article class="prose">
+    <h1>{post.data.title}</h1>
+    <p class="meta">
+      <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
+      {
+        post.data.updatedDate && (
+          <> ({formatDate(post.data.updatedDate)} 更新)</>
+        )
+      }
+      {
+        post.data.categories.map((slug) => (
+          <>
+            {' · '}
+            <a href={`/category/${slug}/`}>{categoryName(slug)}</a>
+          </>
+        ))
+      }
+    </p>
+
+    <TableOfContents headings={headings} />
+
+    <Content />
+
+    {
+      post.data.tags.length > 0 && (
+        <p class="tag-list">タグ: {post.data.tags.join(' / ')}</p>
+      )
+    }
+  </article>
+</BaseLayout>

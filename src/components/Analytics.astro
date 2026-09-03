@@ -1,0 +1,31 @@
+---
+// 組織が発行した計測・広告のスニペット。値とフラグは src/site.config.ts が持つ。
+// 旧 WordPress (Site Kit が出力していたもの) と同じ形を保っている。
+import { site } from '../site.config';
+---
+
+{
+  site.googleTag.enabled && (
+    <>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${site.googleTag.id}`} />
+      <script is:inline define:vars={{ tagId: site.googleTag.id }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', tagId);
+      </script>
+    </>
+  )
+}
+
+{
+  site.adsense.enabled && (
+    <script
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsense.client}`}
+      crossorigin="anonymous"
+    />
+  )
+}

@@ -1,0 +1,40 @@
+---
+// 記事内の目次。Astro が Markdown から抽出した見出し (depth / slug / text) を受け取り、
+// 目次に載せるものだけを選んで並べる。見出しの id は Astro が自動で振るので、
+// ここでは anchor を組み立てるだけでよい。
+
+export interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+
+// 目次に載せるのは h2 と h3 だけ。h4 は旧サイトで外部記事へのリンク見出しとして
+// 使われている回があり、目次に入れると他人の記事タイトルが並んでしまう。
+function selectTocHeadings(headings: Heading[]): Heading[] {
+  return headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+}
+
+const items = selectTocHeadings(headings);
+---
+
+{
+  items.length > 0 && (
+    <nav class="toc" aria-label="目次">
+      <p>目次</p>
+      <ol>
+        {items.map((h) => (
+          <li class={`depth-${h.depth}`}>
+            <a href={`#${h.slug}`}>{h.text}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}

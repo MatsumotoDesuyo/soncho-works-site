@@ -1,0 +1,65 @@
+---
+import { site } from '../site.config';
+import Analytics from '../components/Analytics.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** 一覧ページなど、記事以外では og:type を website にする。 */
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+const { title, description = site.description, ogType = 'website', noindex = false } = Astro.props;
+const pageTitle = title ? `${title} - ${site.title}` : site.title;
+const canonical = new URL(Astro.url.pathname, site.url).href;
+---
+
+<!doctype html>
+<html lang={site.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:site_name" content={site.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <link rel="alternate" type="application/rss+xml" title={site.title} href="/rss.xml" />
+    <Analytics />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="/">{site.title}</a>
+        <nav class="site-nav">
+          <a href="/">記事一覧</a>
+          <a href="/category/">カテゴリー</a>
+          <a href="/works/">Works</a>
+          <a href="/profiel/">Profiel</a>
+          <a href="/my-mission/">My mission</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <ul>
+          <li><a href={site.privacyUrl}>プライバシーポリシー</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+          <li><a href="/sitemap-index.xml">サイトマップ</a></li>
+        </ul>
+        <p>© {site.author}</p>
+      </div>
+    </footer>
+  </body>
+</html>
