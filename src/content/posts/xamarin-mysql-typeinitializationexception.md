@@ -3,7 +3,7 @@ title: "XamarinでSystem.TypeInitializationException: The type initializer for '
 description: "XamarinでMySqlを使おうとしたらこのエラーが出て2日くらい詰まってました。 解決方法をシェ …"
 pubDate: "2019-10-12T16:46:00+09:00"
 updatedDate: "2019-10-12T16:50:17+09:00"
-categories: ["xamarin"]
+categories: ["dev-notes"]
 tags: ["MySQL"]
 heroImage: "/wp-content/uploads/2019/10/image-11.png"
 wpId: 188

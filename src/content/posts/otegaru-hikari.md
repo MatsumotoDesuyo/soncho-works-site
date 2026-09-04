@@ -3,7 +3,7 @@ title: "おてがる光を半年使ったレビュー"
 description: "こんにちは。そんちょーと申します。エンジニアをやっております。 半年おてがる光を使って、良かった点悪 …"
 pubDate: "2022-10-01T19:15:13+09:00"
 updatedDate: "2022-10-01T19:20:50+09:00"
-categories: ["uncategorized"]
+categories: ["daily-fix"]
 wpId: 1069
 oldUrl: "/2022/10/01/otegaru-hikari/"
 ---

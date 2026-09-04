@@ -3,7 +3,7 @@ title: "【徹底攻略】ライズオブザレジスタンスのボーディン
 description: "こんにちは！ディズニー好きのITエンジニア、そんちょーです。 先日ハリウッドスタジオの新アトラクショ …"
 pubDate: "2020-02-28T22:50:33+09:00"
 updatedDate: "2020-03-02T00:12:33+09:00"
-categories: ["disney-resort"]
+categories: ["disney"]
 tags: ["Boarding pass", "Rise of the Resistance", "WDW"]
 heroImage: "/wp-content/uploads/2020/02/5013.jpg"
 wpId: 423

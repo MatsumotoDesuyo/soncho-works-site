@@ -3,7 +3,7 @@ title: "ネットワーク上のファイルのショートカットの作成方
 description: "WindowsのエクスプローラはFTPなどといった規格でネットワーク上のファイルをローカル上にあるか …"
 pubDate: "2020-01-03T20:57:48+09:00"
 updatedDate: "2020-01-04T00:14:15+09:00"
-categories: ["windows"]
+categories: ["daily-fix"]
 tags: ["FTP"]
 wpId: 338
 oldUrl: "/2020/01/03/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E4%B8%8A%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%81%AE%E4%BD%9C/"

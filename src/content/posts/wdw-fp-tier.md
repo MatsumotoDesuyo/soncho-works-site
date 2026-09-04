@@ -3,7 +3,7 @@ title: "ウォルトディズニーワールドのFP+ティア(2020/02/19)"
 description: "2020/02/19からハリウッドスタジオのFP+の区分けが変わりました。 Tier1にミレニアムフ …"
 pubDate: "2020-02-19T15:20:25+09:00"
 updatedDate: "2020-02-19T15:48:53+09:00"
-categories: ["disney-resort"]
+categories: ["disney"]
 wpId: 418
 oldUrl: "/2020/02/19/wdw-fp-tier/"
 ---

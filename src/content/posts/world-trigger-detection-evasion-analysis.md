@@ -3,7 +3,7 @@ title: "捕捉＆隠蔽訓練の分析-ワールドトリガー"
 description: "ワールドトリガーの捕捉＆隠蔽訓練の順位について分析したことを残しておきます。 順位 1位 奈良坂 1 …"
 pubDate: "2019-12-31T00:54:36+09:00"
 updatedDate: "2020-01-13T11:11:26+09:00"
-categories: ["world-trigger"]
+categories: ["stories"]
 tags: ["スナイパー", "狙撃手"]
 wpId: 332
 oldUrl: "/2019/12/31/%E6%8D%95%E6%8D%89%EF%BC%86%E9%9A%A0%E8%94%BD%E8%A8%93%E7%B7%B4%E3%81%AE%E5%88%86%E6%9E%90-%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%88%E3%83%AA%E3%82%AC%E3%83%BC/"

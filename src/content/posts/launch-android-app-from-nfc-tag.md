@@ -3,7 +3,7 @@ title: "NFCタグから開発したAndroidアプリを起動する"
 description: "まだアンドロイド開発に慣れきっていない。修行中のそんちょーです。 最近NFCタグを使ったアプリを作っ …"
 pubDate: "2019-12-27T01:13:27+09:00"
 updatedDate: "2019-12-27T02:19:53+09:00"
-categories: ["android"]
+categories: ["dev-notes"]
 tags: ["Kotlin", "NFC"]
 wpId: 276
 oldUrl: "/2019/12/27/nfc%E3%82%BF%E3%82%B0%E3%81%8B%E3%82%89%E8%87%AA%E5%88%86%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%99%E3%82%8B/"

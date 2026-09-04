@@ -3,7 +3,7 @@ title: "【モバイルPASMO】お客様の定期券は払いもどしのお取�
 description: "結論：クレジットカード以外の方法で定期券を購入した場合、専用フォームから払い戻しの申請が必要です。 …"
 pubDate: "2020-10-19T13:27:45+09:00"
 updatedDate: "2020-10-20T20:27:03+09:00"
-categories: ["dx"]
+categories: ["daily-fix"]
 wpId: 570
 oldUrl: "/2020/10/19/mobilepasmo-refund/"
 ---

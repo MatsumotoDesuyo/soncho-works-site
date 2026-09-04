@@ -3,7 +3,7 @@ title: "ゲムヲはなぜ撃墜難と言われるのか"
 description: "こんにちは。ゲムヲ使いのそんちょーです。 Mr.ゲームアンドウォッチを使っている身としてはゲムヲが撃 …"
 pubDate: "2019-10-01T12:17:38+09:00"
 updatedDate: "2019-10-01T12:26:40+09:00"
-categories: ["mr-game-and-watch"]
+categories: ["games"]
 tags: ["ゲムヲ", "大乱闘スマッシュブラザーズSP"]
 heroImage: "/wp-content/uploads/2019/10/Mr.ゲームウォッチ_SP_横スマ.jpg"
 wpId: 120

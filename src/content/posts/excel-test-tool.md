@@ -3,7 +3,7 @@ title: "Excelのテストを楽にするツールを作りました"
 description: "こんにちは。そんちょーと申します。 Excelでテストしてますか？Excelの各行にテスト項目が書い …"
 pubDate: "2022-06-04T22:06:39+09:00"
 updatedDate: "2022-06-05T15:49:52+09:00"
-categories: ["uncategorized"]
+categories: ["made"]
 heroImage: "/wp-content/uploads/2022/06/internet_kanki_man1.png"
 wpId: 818
 oldUrl: "/2022/06/04/excel-test-tool/"

@@ -3,7 +3,7 @@ title: "百均だけでマグネットティッシュケース作った"
 description: "こんにちは。そんちょーと申します。 セリアで330円でマグネットティッシュケースを作っていい感じだっ …"
 pubDate: "2021-06-13T18:36:43+09:00"
 updatedDate: "2021-06-13T18:50:50+09:00"
-categories: ["uncategorized"]
+categories: ["made"]
 heroImage: "/wp-content/uploads/2021/06/table_tis2.jpg"
 wpId: 658
 oldUrl: "/2021/06/13/%E7%99%BE%E5%9D%87%E3%81%A0%E3%81%91%E3%81%A7%E3%83%9E%E3%82%B0%E3%83%8D%E3%83%83%E3%83%88%E3%83%86%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B1%E3%83%BC%E3%82%B9%E4%BD%9C%E3%81%A3%E3%81%9F/"

@@ -3,7 +3,7 @@ title: "なぜ日本はAIを友達として扱うと言われるのか？：考�
 description: "先日西洋と東洋のAIの扱いがちょっと違うという話を聞きました。 AIを 西洋：道具、召使いとして 東 …"
 pubDate: "2019-12-26T11:43:15+09:00"
 updatedDate: "2019-12-31T01:13:40+09:00"
-categories: ["thoughts"]
+categories: ["reading"]
 tags: ["AI", "サピエンス全史", "思想"]
 wpId: 272
 oldUrl: "/2019/12/26/%E6%9D%B1%E6%B4%8B%E3%81%A8%E8%A5%BF%E6%B4%8B%E3%81%AEai%E3%81%AE%E6%89%B1%E3%81%84%E3%81%AE%E9%81%95%E3%81%84%E3%81%AE%E6%A0%B9%E5%BA%95/"

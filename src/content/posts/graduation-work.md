@@ -3,7 +3,7 @@ title: "習慣行動改善のアプリを作りました。"
 description: "こんにちは、そんちょーです。 習慣行動改善をテーマにアプリを作って、研究報告書を作りました。 学会で …"
 pubDate: "2020-02-14T17:11:05+09:00"
 updatedDate: "2022-07-10T07:16:46+09:00"
-categories: ["uncategorized"]
+categories: ["made"]
 wpId: 413
 oldUrl: "/2020/02/14/graduation-work/"
 ---

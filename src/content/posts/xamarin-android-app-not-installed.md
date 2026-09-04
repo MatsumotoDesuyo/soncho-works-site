@@ -3,7 +3,7 @@ title: "アプリはインストールされていません Xamarin.Android"
 description: "Androidでアプリ開発をしている時に、USBデバッグは上手くいったのにapkファイルで配布しよう …"
 pubDate: "2019-11-20T11:04:48+09:00"
 updatedDate: "2019-11-20T11:04:53+09:00"
-categories: ["xamarin-android"]
+categories: ["dev-notes"]
 heroImage: "/wp-content/uploads/2019/11/67516.jpg"
 wpId: 250
 oldUrl: "/2019/11/20/%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%80%80xamarin-android/"
