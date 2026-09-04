@@ -12,53 +12,47 @@ soncho-works.com (apex) の静的サイト。Astro でビルドし、Cloudflare 
 | `npm run dev` | 開発サーバー |
 | `npm run build` | `dist/` を作る |
 | `npm run verify` | `dist/` を受け入れ条件に照らして検証する |
-| `npm run import` | 旧 WordPress から記事・画像を取り込み直す |
 | `npx wrangler dev` | `dist/` を Cloudflare の挙動 (リダイレクト・404) つきで配信する |
 
 `_redirects` と 404 の実挙動は `npm run verify` では見られないので、`npx wrangler dev` で確認する。
+Cloudflare へのデプロイは platform (my-server) の担当で、`main` への merge が本番デプロイになる。
 
 ## 構成
 
 ```
-scripts/import-wp.mjs      旧 WordPress から取り込む (何度でも再実行できる)
-scripts/slug-map.json      日本語 slug -> ASCII slug の対応表。人が確認する成果物
-scripts/external-images.json 他サイトの画像の扱い (自サイトに置く / 落とす)。同上
-scripts/verify-build.mjs   dist/ の検証
-src/site.config.ts       サイト名・URL・AdSense・Google タグ・privacy URL
-src/content/posts/       記事 57 件 (import-wp.mjs が生成)
-src/content/pages/       固定ページ 4 件 (同上)
-src/data/categories.json カテゴリー slug と日本語名 (同上)
-public/wp-content/uploads/ 旧サイトの画像。URL のパスを維持している
-public/images/external/    他サイトから引き取った画像 (同上)
-public/_redirects          旧 permalink からの 301 (同上)
+src/content/posts/           記事
+src/content/pages/           固定ページ (/works/ /my-mission/ /profiel/ /for-olc/)
+src/data/categories.json     カテゴリー slug と日本語名
+src/site.config.ts           サイト名・URL・AdSense・Google タグ・privacy URL
+public/wp-content/uploads/   旧 WordPress の画像。URL のパスを維持している
+public/images/external/      他サイトから引き取った画像
+public/_redirects            旧 permalink からの 301
+scripts/verify-build.mjs     dist/ の検証
+scripts/external-images.json 引き取った画像の出典の記録
 ```
 
-他サイトの画像はホットリンクしない。旧サイトが他所のサーバーの画像を直接参照していた
-27 か所は、出所を辿れるものを `public/images/external/` に引き取り、辿れないもの
-(消えている画像、Google 画像検索のサムネイル) は本文から落とした。扱いは
-`scripts/external-images.json` が持ち、キーが元の URL なので出典の記録も兼ねる。
-対応表に無い外部画像が現れた場合、`npm run import` は勝手に判断せずそのまま残して警告する。
+記事を足すときは `src/content/posts/` に Markdown を置く。frontmatter は `src/content.config.ts` の
+スキーマに従う。`oldUrl` は WordPress から移してきた記事だけが持つもので、新しい記事には要らない。
 
-`src/content/`、`src/data/categories.json`、`public/wp-content/uploads/`、`public/_redirects` は
-`npm run import` の生成物なので直接編集しない。URL を変えたいときは `scripts/slug-map.json` を直して
-取り込み直す。
+他サイトの画像はホットリンクしない。自分で用意するか、`public/images/external/` に置いて
+`scripts/external-images.json` に出典を記録する。
 
-## 移行で踏んだ落とし穴
+## 気をつけること
 
-作業中に判明した、直すと壊れる箇所。
+WordPress からの移行 (#1) で踏んだ落とし穴のうち、いま触ると壊れるもの。
 
 - **`astro` はバージョンを固定している (7.2.10)。** 7.3.0 は `astro/_internal/logger` を
   exports に含めておらず、ビルドが落ちる。上げるときはビルドを通してから。
-- **`_redirects` のパスは大文字のパーセントエンコードで書く。** 照合は大文字小文字を区別し、
-  WordPress の permalink は小文字 (`%e3%83%ab`)、ブラウザが送るのは大文字 (`%E3%83%AB`) なので、
-  そのまま書くと日本語 slug の記事 43 件が 1 件も当たらない。素の UTF-8 で書くのも不可
-  (全角スペースが区切りと解釈されて行ごと無効になる)。`npm run verify` が検査している。
-- **一覧 API は本文込みだと 500 を返す。** `posts?per_page=N&page=M` に `content` を含めると
-  特定の記事を含むページで落ちるので、一覧では id だけを取り本文は 1 件ずつ取得している。
-  移行元は 1GB メモリの古い VPS なので、画像も並列で取らず 200ms 間隔で 1 件ずつ落とす。
-- **画像は `srcset` のサイズ違いも配置する。** turndown が `srcset` を落とすので生成物の HTML には
-  出てこないが、D3 の「外部からの直リンクも切れない」は**旧サイトが公開していた URL 空間**が基準。
-  `src` だけを見ると 221 件のサイズ違いが抜ける。`npm run import` は本文が参照する画像が
-  1 枚でも取得できなければ**失敗する**。`dist/` を見る `npm run verify` では検出できないため。
+- **`public/_redirects` のパスは大文字のパーセントエンコードで書く。** 照合は大文字小文字を
+  区別するので、小文字 (`%e3%83%ab`) で書くと日本語 slug の旧 URL 43 件が当たらない。
+  素の UTF-8 で書くのも不可 (全角スペースが区切りと解釈されて行ごと無効になる)。
+  `npm run verify` が検査している。
+- **旧 permalink 57 件を減らさない。** 過去の事実なので増減しない値として `verify` が見張っている。
+  減らすと旧 URL の被リンクと検索順位を落とす。
 - **Search Console の検証ファイルは 200 リライトで返している。** Workers Static Assets は既定で
   `*.html` を拡張子なしの URL へ 307 で飛ばすため、そのままだと確認 URL が 200 を返さない。
+- **`public/wp-content/uploads/` は旧サイトの URL 空間の再現。** サイズ違い (`-1024x683.png` など)
+  も含めて置いてあるのは、外部からの直リンクを切らないため。新しい画像はここに混ぜない。
+
+移行に使ったツール (`scripts/import-wp.mjs`、`scripts/slug-map.json`) は撤収した。
+移行元の WordPress は切替とともに消えており、再実行はできない。

@@ -56,15 +56,19 @@ const main = async () => {
   check(files.has('rss.xml'), '/rss.xml がある');
   const rss = await readFile(join(DIST, 'rss.xml'), 'utf8').catch(() => '');
   const rssItems = (rss.match(/<item>/g) ?? []).length;
-  check(rssItems === 57, `RSS に記事 57 件が入っている`, `${rssItems} 件`);
+  const postFiles = (await readdir(join(ROOT, 'src', 'content', 'posts'))).filter((f) => f.endsWith('.md'));
+  check(rssItems === postFiles.length, 'RSS に全記事が入っている', `RSS ${rssItems} 件 / 記事 ${postFiles.length} 件`);
   check(rss.startsWith('<?xml'), 'RSS が XML として妥当な書き出し');
 
   // --- 3. 404 ページ (not_found_handling: 404-page が返す実体)
   check(files.has('404.html'), '/404.html がある');
 
   // --- 4. 広告と計測のスニペット
+  // 記事は特定の 1 本に依存させず、生成された最初の記事ページを見る。
   const home = await readFile(join(DIST, 'index.html'), 'utf8');
-  const post = await readFile(join(DIST, 'posts', 'my-ahk', 'index.html'), 'utf8');
+  const anyPost = html.find((f) => /[\\/]posts[\\/][^\\/]+[\\/]index\.html$/.test(f));
+  check(anyPost !== undefined, '記事ページが生成されている');
+  const post = anyPost ? await readFile(anyPost, 'utf8') : '';
   for (const [label, body] of [['トップ', home], ['記事', post]]) {
     check(body.includes(site.adsense.client), `${label}ページに AdSense (${site.adsense.client})`);
     check(body.includes(site.googleTag.id), `${label}ページに Google タグ (${site.googleTag.id})`);
@@ -94,8 +98,15 @@ const main = async () => {
     .split('\n')
     .filter((l) => l.trim() && !l.startsWith('#'))
     .map((l) => l.trim().split(/\s+/));
+  // 57 は WordPress から引き継いだ permalink の数で、過去の事実なので今後も増減しない。
+  // 減っていたら旧 URL の被リンクと検索順位を落とすことになるので、固定値で見張る。
+  const MIGRATED_PERMALINKS = 57;
   const postRules = rules.filter(([from]) => /^\/\d{4}\/\d{2}\/\d{2}\//.test(from));
-  check(postRules.length === 57, '旧 permalink 57 件のリダイレクトがある', `${postRules.length} 件`);
+  check(
+    postRules.length === MIGRATED_PERMALINKS,
+    `旧 permalink ${MIGRATED_PERMALINKS} 件のリダイレクトがある`,
+    `${postRules.length} 件`,
+  );
   const notRedirect = rules.filter(([, , code]) => code !== '301');
   check(
     notRedirect.length === 1 && notRedirect[0][0] === '/google07299d5f1a873207.html' && notRedirect[0][2] === '200',
@@ -127,15 +138,23 @@ const main = async () => {
   }
 
   // --- 7. 旧 URL の frontmatter と _redirects の突き合わせ
+  // oldUrl を持つのは WordPress から移してきた記事だけ。移行後に書いた記事は持たないので、
+  // 「全記事が持っていること」は要求しない (要求すると新しい記事を書いた時点で落ちる)。
   const fromSet = new Set(postRules.map(([from]) => from));
-  const posts = await readdir(join(ROOT, 'src', 'content', 'posts'));
+  let migrated = 0;
   let missingOld = 0;
-  for (const name of posts) {
+  for (const name of postFiles) {
     const md = await readFile(join(ROOT, 'src', 'content', 'posts', name), 'utf8');
     const oldUrl = md.match(/^oldUrl: "([^"]+)"/m)?.[1];
-    if (!oldUrl || !fromSet.has(oldUrl)) missingOld++;
+    if (!oldUrl) continue;
+    migrated++;
+    if (!fromSet.has(oldUrl)) missingOld++;
   }
-  check(missingOld === 0, '全記事の旧 URL が _redirects に載っている', `不足 ${missingOld} 件`);
+  check(
+    missingOld === 0,
+    '移行してきた記事の旧 URL がすべて _redirects に載っている',
+    `対象 ${migrated} 件 / 不足 ${missingOld} 件`,
+  );
 
   // --- 8. Cloudflare Workers Static Assets の上限
   check(absFiles.length <= CF_MAX_FILES, `ファイル数が上限 ${CF_MAX_FILES} 以内`, `${absFiles.length} 件`);

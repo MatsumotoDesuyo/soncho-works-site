@@ -1,8 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-// scripts/import-wp.mjs が書き出す Markdown を読む。frontmatter の形は
-// そちらの frontmatter() と対になっている。
+// src/content/ の Markdown を読む。oldUrl は WordPress から移してきた記事だけが持ち、
+// public/_redirects の 301 元と対応する。移行後に書く記事は持たない。
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
