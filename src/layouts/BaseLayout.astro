@@ -58,6 +58,7 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
           <li><a href="/rss.xml">RSS</a></li>
           <li><a href="/sitemap-index.xml">サイトマップ</a></li>
         </ul>
+        <p class="amazon-disclosure">{site.amazon.disclosure}</p>
         <p>© {site.author}</p>
       </div>
     </footer>

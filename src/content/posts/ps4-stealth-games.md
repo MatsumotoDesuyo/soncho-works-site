@@ -87,7 +87,7 @@ oldUrl: "/2019/11/10/ps4%E3%81%AE%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E
 
 **ステルスゲームをやったことがないという方は、是非メタルギアから始めてください！**
 
-[Amazon で見る (B01L8EOOY4)](https://www.amazon.co.jp/dp/B01L8EOOY4?tag=soncho00-22)
+[Amazon で見る (B01L8EOOY4)](https://www.amazon.co.jp/dp/B01L8EOOY4)
 
 #### Alien: Isolation
 
@@ -105,7 +105,7 @@ Alien: Isolation
 
 マゾゲー耐性のあるステルスゲーマーの方は是非遊んでみてください！
 
-[Amazon で見る (B00UHKAVF2)](https://www.amazon.co.jp/dp/B00UHKAVF2?tag=soncho00-22)
+[Amazon で見る (B00UHKAVF2)](https://www.amazon.co.jp/dp/B00UHKAVF2)
 
 #### WATCH DOGS
 
@@ -119,7 +119,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 カーアクションが要求されるのでそこだけ頑張れるのであれば是非プレイしてください。
 
-[Amazon で見る (B00VUVGNW2)](https://www.amazon.co.jp/dp/B00VUVGNW2?tag=soncho00-22)
+[Amazon で見る (B00VUVGNW2)](https://www.amazon.co.jp/dp/B00VUVGNW2)
 
 #### WATCH DOGS2
 
@@ -133,7 +133,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 **ステルスのクオリティ、ボリューム、作りこみ、欠点の無い名作です。**
 
-[Amazon で見る (B01I2IGYY2)](https://www.amazon.co.jp/dp/B01I2IGYY2?tag=soncho00-22)
+[Amazon で見る (B01I2IGYY2)](https://www.amazon.co.jp/dp/B01I2IGYY2)
 
 #### HITMAN
 
@@ -147,7 +147,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 癖があるものの、**マップを把握し、人員を把握し、隙のある状況を計画するこのゲームはステルスゲームのエッセンスが盛り込まれています。**
 
-[Amazon で見る (B07DKMC7S2)](https://www.amazon.co.jp/dp/B07DKMC7S2?tag=soncho00-22)
+[Amazon で見る (B07DKMC7S2)](https://www.amazon.co.jp/dp/B07DKMC7S2)
 
 #### HITMAN2
 
@@ -156,7 +156,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 日本への配給元が変わったせいで前作で素晴らしかった日本語吹き替えが無くなったのが残念。なぜそこだけスケールダウンしたのか。  
 3は全編吹替を願っています。
 
-[Amazon で見る (B07GPX431Q)](https://www.amazon.co.jp/dp/B07GPX431Q?tag=soncho00-22)
+[Amazon で見る (B07GPX431Q)](https://www.amazon.co.jp/dp/B07GPX431Q)
 
 ### ★★★★☆ 良ステルスゲーム
 
@@ -218,7 +218,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 今時珍しい、純粋な一本道ステルスゲームです。
 
-[Amazon で見る (B07WSQ8XF4)](https://www.amazon.co.jp/dp/B07WSQ8XF4?tag=soncho00-22)
+[Amazon で見る (B07WSQ8XF4)](https://www.amazon.co.jp/dp/B07WSQ8XF4)
 
 #### ASSASSIN’S CREED THE EZIO COLLECTION
 

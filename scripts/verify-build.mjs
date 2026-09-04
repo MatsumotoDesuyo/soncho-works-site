@@ -175,6 +175,68 @@ const main = async () => {
   const total = sizes.reduce((n, s) => n + s.size, 0);
   console.log(`dist: ${absFiles.length} ファイル / ${(total / 1024 / 1024).toFixed(1)} MiB\n`);
 
+  // --- 9. Amazon アソシエイト
+  // 旧方式 (2023 年末に表示終了した iframe ウィジェットと、中身が不透明な短縮 URL) が
+  // 生成物に混ざっていないこと。本文を直接編集すると復活しうるので、ここで見張る。
+  const distText = await Promise.all(html.map((f) => readFile(f, 'utf8')));
+  const withOldStyle = html.filter((f, i) => /amazon-adsystem|amzn\.to/.test(distText[i]));
+  check(withOldStyle.length === 0, '旧方式の Amazon リンクが残っていない', withOldStyle.map((f) => relative(DIST, f)).join(', '));
+
+  // hast-amazon-links がすべてのリンクに触れたか。素通りしたものがあれば収益にならない。
+  const amazonAnchors = distText.flatMap((body, i) =>
+    [...body.matchAll(/<a\s[^>]*>/g)]
+      .map((m) => m[0])
+      .filter((a) => /href="https:\/\/[^"]*amazon\.co\.jp/.test(a))
+      .map((a) => ({ a, file: relative(DIST, html[i]) })),
+  );
+  check(amazonAnchors.length > 0, 'Amazon リンクが生成物にある', `${amazonAnchors.length} 本`);
+  const noTag = amazonAnchors.filter(({ a }) => !a.includes(`tag=${site.amazon.tag}`));
+  check(noTag.length === 0, `Amazon リンクすべてにトラッキング ID (${site.amazon.tag}) がある`, noTag.map((x) => x.file).join(', '));
+  // Google はアフィリエイトリンクに rel="sponsored" の表明を求めている。
+  const noRel = amazonAnchors.filter(({ a }) => !/rel="[^"]*sponsored/.test(a));
+  check(noRel.length === 0, 'Amazon リンクすべてに rel="sponsored" がある', noRel.map((x) => x.file).join(', '));
+  // 商品ページは /dp/<ASIN>?tag=... のシンプル正規形に揃っていること。
+  // 期待値を組み立てて文字列比較する。URL を正規表現に埋めるとエスケープを誤りやすい。
+  const canonical = (asin) => `https://www.amazon.co.jp/dp/${asin}?tag=${site.amazon.tag}`;
+  const badShape = amazonAnchors.filter(({ a }) => {
+    const href = a.match(/href="([^"]+)"/)?.[1] ?? '';
+    if (!href.includes('/dp/')) return false;
+    const asin = href.match(/\/dp\/([A-Z0-9]{10})/)?.[1];
+    return asin === undefined || href !== canonical(asin);
+  });
+  check(badShape.length === 0, '商品リンクが /dp/<ASIN>?tag=... の正規形である', badShape.map((x) => x.file).join(', '));
+
+  // 商品名を登録済みの ASIN は必ずカードで出ること。
+  // Astro のコンテンツキャッシュ (node_modules/.astro/data-store.json) はレンダリング済みの
+  // HTML を Markdown の内容だけを鍵に保持するので、amazon-products.json やプラグインを
+  // 直しても記事は再レンダリングされず、古い出力が残る。これはエラーにならず静かに起きる。
+  // 落ちたときは node_modules/.astro を消して再ビルドすること。
+  const productNames = JSON.parse(await readFile(join(ROOT, 'src', 'data', 'amazon-products.json'), 'utf8'));
+  const notCarded = amazonAnchors.filter(({ a }) => {
+    const asin = a.match(/\/dp\/([A-Z0-9]{10})/)?.[1];
+    return asin !== undefined && productNames[asin] !== undefined && !a.includes('class="amazon-card"');
+  });
+  check(
+    notCarded.length === 0,
+    '商品名を登録済みの ASIN がすべてカードで出ている',
+    notCarded.length ? `${notCarded.map((x) => x.file).join(', ')} — node_modules/.astro を消して再ビルド` : '',
+  );
+
+  // 運営規約が求める開示。BaseLayout を通る全ページのフッターに出ること。
+  // public/ にそのまま置いている組織の配信物 (プライバシーポリシー・Search Console の
+  // 検証ファイル) はこのサイトが中身に手を入れてよいものではないので、対象から外す。
+  const publicFiles = new Set(
+    (await walk(join(ROOT, 'public')))
+      .map((f) => relative(join(ROOT, 'public'), f).split('\\').join('/')),
+  );
+  const generated = html.filter((f) => !publicFiles.has(relative(DIST, f).split('\\').join('/')));
+  const noDisclosure = generated.filter((f) => !distText[html.indexOf(f)].includes(site.amazon.disclosure));
+  check(
+    noDisclosure.length === 0,
+    'アソシエイト開示が Astro の生成ページすべてにある',
+    `対象 ${generated.length} ページ / 欠落 ${noDisclosure.length} ページ`,
+  );
+
   // --- 出力
   for (const r of results) {
     console.log(`${r.ok ? '  OK  ' : '  NG  '} ${r.label}${r.detail ? `  [${r.detail}]` : ''}`);

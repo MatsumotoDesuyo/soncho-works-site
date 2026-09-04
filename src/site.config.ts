@@ -23,6 +23,16 @@ export const site = {
     id: 'GT-M6XHF7Q',
   },
 
+  /**
+   * Amazon アソシエイト。トラッキング ID は組織が発行した 1 個だけを使う。
+   * 本文の Markdown には ID を書かない。リンクへの付与は rehype-amazon-links が行う。
+   */
+  amazon: {
+    tag: 'soncho00-22',
+    /** 運営規約が表示を求める開示。Amazon 指定の文面をそのまま使う。 */
+    disclosure: 'Amazonのアソシエイトとして、そんちょーは適格販売により収入を得ています。',
+  },
+
   /** 記事一覧の 1 ページあたりの件数。 */
   postsPerPage: 20,
 } as const;
