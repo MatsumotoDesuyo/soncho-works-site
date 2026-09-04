@@ -22,7 +22,7 @@ oldUrl: "/2020/01/07/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%81%8B%E3%82%89%E8%A
 
 敵の基地に潜入し、背後からステルスアタックをすることはできます。複数の敵を同時に相手にするのが大変なことからも、ステルスプレイがある程度推奨されているのもたしかでしょう。
 
-[Amazon で見る (B07FTCKMX8)](https://www.amazon.co.jp/dp/B07FTCKMX8?tag=soncho00-22)
+[Amazon で見る (B07FTCKMX8)](https://www.amazon.co.jp/dp/B07FTCKMX8)
 
 ### ステルスキルができない
 
@@ -168,4 +168,4 @@ oldUrl: "/2020/01/07/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%81%8B%E3%82%89%E8%A
 
 武器装備の中にはアサシンの値を上げてくれるものがあるので、それを積極的に集めて装備しましょう。全部の装備にアサシンアップをつければ100%くらいのアサシン値の向上を見込めます。
 
-[Amazon で見る (B07FTCKMX8)](https://www.amazon.co.jp/dp/B07FTCKMX8?tag=soncho00-22)
+[Amazon で見る (B07FTCKMX8)](https://www.amazon.co.jp/dp/B07FTCKMX8)

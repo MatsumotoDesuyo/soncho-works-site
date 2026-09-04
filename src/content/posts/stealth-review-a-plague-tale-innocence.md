@@ -39,4 +39,4 @@ oldUrl: "/2020/01/28/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%81%8B%E3%82%89%E8%A
 
 ステルス関係ないですが、 『 A Plague Tale: Innocence 』がゲームアワード2019のBest Narrativeを受賞しました。ストーリーもいいですよ。
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&amp;t=soncho00-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS1=1&amp;detail=1&amp;asins=B07WSQ8XF4&amp;linkId=564ae9f1bb77aee573cd6e30db86360b&amp;bc1=ffffff&amp;lt1=_blank&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr"></iframe>
+[Amazon で見る (B07WSQ8XF4)](https://www.amazon.co.jp/dp/B07WSQ8XF4)

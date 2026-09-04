@@ -91,6 +91,60 @@ a {
   padding: 0;
 }
 
+/* アソシエイト開示。規約が求める表示なので、目立たせすぎず埋もれさせない。 */
+.amazon-disclosure {
+  margin: 0 0 0.5rem;
+}
+
+/* --- Amazon 商品リンク --- */
+
+/*
+ * 商品画像は規約上 Creators API 経由でしか出せないので、商品名だけのカードにする。
+ * マークアップは rehype-amazon-links が組み立てる。
+ */
+.prose .amazon-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  background: var(--code-bg);
+  color: var(--fg);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.prose .amazon-card:hover {
+  border-color: var(--link);
+}
+
+.amazon-card-name {
+  font-weight: 600;
+}
+
+/* 行き先が Amazon だと一目でわかるようにする。矢印は外部リンクの合図。 */
+.amazon-card-cta {
+  flex: none;
+  font-size: 0.85rem;
+  color: var(--link);
+  white-space: nowrap;
+}
+
+.amazon-card-cta::after {
+  content: ' 97';
+}
+
+/* 幅が狭いと商品名と CTA が潰れ合うので、縦に積む。 */
+@media (max-width: 30rem) {
+  .prose .amazon-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
+
 /* --- 記事一覧 --- */
 
 .post-list {
