@@ -11,7 +11,7 @@ oldUrl: "/2020/01/28/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%81%8B%E3%82%89%E8%A
 
 ## ★★★★☆ 深みは無いが純粋なステルスゲーム
 
-![](https://livedoor.blogimg.jp/games084/imgs/d/b/db86b830.png)
+![](/images/external/livedoor-blogimg-jp-db86b830-1a4d2b35.png)
 
 ### 概要/ステルス
 

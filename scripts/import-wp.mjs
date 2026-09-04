@@ -21,12 +21,18 @@ const WP = 'https://soncho-works.com/wp-json/wp/v2';
 // 旧サイトが本文中で使っている自サイトのホスト表記。どちらも同じサイトを指す。
 const OLD_HOSTS = [/https?:\/\/160\.251\.77\.216/gi, /https?:\/\/soncho-works\.com/gi];
 const AMAZON_TAG = 'soncho00-22';
+const UA = 'soncho-works-site-import';
 
 const SLUG_MAP_PATH = join(ROOT, 'scripts', 'slug-map.json');
+const EXTERNAL_MAP_PATH = join(ROOT, 'scripts', 'external-images.json');
 const REPORT_PATH = join(ROOT, 'scripts', 'import-report.json');
 const POSTS_DIR = join(ROOT, 'src', 'content', 'posts');
 const PAGES_DIR = join(ROOT, 'src', 'content', 'pages');
 const UPLOADS_DIR = join(ROOT, 'public', 'wp-content', 'uploads');
+
+/** 他サイトから引き取った画像の置き場。旧サイトの URL 空間 (wp-content) とは分ける。 */
+const EXTERNAL_DIR = join(ROOT, 'public', 'images', 'external');
+const EXTERNAL_URL_BASE = '/images/external/';
 
 const skipMedia = process.argv.includes('--no-media');
 
@@ -34,7 +40,7 @@ const skipMedia = process.argv.includes('--no-media');
 
 async function getJson(url, tries = 3) {
   for (let i = 1; i <= tries; i++) {
-    const res = await fetch(url, { headers: { 'user-agent': 'soncho-works-site-import' } });
+    const res = await fetch(url, { headers: { 'user-agent': UA } });
     if (res.ok) return res.json();
     if (i === tries) throw new Error(`GET ${url} -> ${res.status}`);
     await new Promise((r) => setTimeout(r, 500 * i));
@@ -111,6 +117,39 @@ function collectSrcsetPaths(html, report) {
       if (url.startsWith('/wp-content/uploads/')) report.uploadPaths.add(decode(url));
     }
   }
+}
+
+/**
+ * 他サイトの画像のホットリンクをやめる。scripts/external-images.json の指示に従い、
+ * action: host なら自サイトに取り込んだファイルを指し、action: remove なら参照ごと落とす。
+ * 表に無い URL は勝手に判断せずそのまま残し、報告に出す (人が表に足す)。
+ * stripHost 済みの HTML に対して呼ぶこと (自サイトの画像は相対パスなので対象外になる)。
+ */
+function rehostExternalImages(html, externalMap, report, slug) {
+  let out = html.replace(/<img[^>]*\bsrc="(https?:\/\/[^"]+)"[^>]*>/g, (tag, rawUrl) => {
+    const url = unescapeUrl(rawUrl);
+    const entry = externalMap[url];
+    if (!entry) {
+      report.unknownExternalImages.push({ slug, url });
+      return tag;
+    }
+    if (entry.action === 'remove') {
+      report.removedExternalImages.push({ slug, url, reason: entry.reason });
+      return '';
+    }
+    report.hostedExternalImages.push({ slug, url, file: entry.file });
+    return tag.replace(rawUrl, `${EXTERNAL_URL_BASE}${entry.file}`);
+  });
+
+  // 画像を落とした結果、中身が空になった入れ物を片づける。
+  // figure > a > img の入れ子があるので数回まわす。
+  for (let i = 0; i < 3; i++) {
+    out = out
+      .replace(/<a[^>]*>\s*<\/a>/g, '')
+      .replace(/<figure[^>]*>\s*<\/figure>/g, '')
+      .replace(/<p>\s*<\/p>/g, '');
+  }
+  return out;
 }
 
 /** Easy Table of Contents がレンダリング時に差し込む目次。Astro 側で作り直すので捨てる。 */
@@ -304,6 +343,33 @@ async function exists(path) {
 const FETCH_INTERVAL_MS = 200;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** 他サイトから引き取る画像。相手のサーバーなので同じく 1 件ずつ間隔を空ける。 */
+async function downloadExternalImages(externalMap, report) {
+  let downloaded = 0;
+  let cached = 0;
+  for (const [url, entry] of Object.entries(externalMap)) {
+    if (entry.action !== 'host') continue;
+    const dest = join(EXTERNAL_DIR, entry.file);
+    if (await exists(dest)) {
+      cached++;
+      continue;
+    }
+    const res = await fetch(url, { headers: { 'user-agent': UA } }).catch((e) => ({
+      ok: false,
+      status: e.code ?? 'ERR',
+    }));
+    if (res.ok) {
+      await mkdir(EXTERNAL_DIR, { recursive: true });
+      await writeFile(dest, Buffer.from(await res.arrayBuffer()));
+      downloaded++;
+    } else {
+      report.missingExternalImages.push({ url, file: entry.file, status: res.status });
+    }
+    await sleep(FETCH_INTERVAL_MS);
+  }
+  return { downloaded, cached };
+}
+
 async function downloadUploads(paths, report) {
   let downloaded = 0;
   let cached = 0;
@@ -341,6 +407,10 @@ async function main() {
     amazonWithoutAsin: [],
     unresolvedInternalLinks: [],
     slugMapAdditions: [],
+    hostedExternalImages: [],
+    removedExternalImages: [],
+    unknownExternalImages: [],
+    missingExternalImages: [],
   };
 
   console.log('WordPress から取得中...');
@@ -354,6 +424,7 @@ async function main() {
   console.log(`  posts ${posts.length} / pages ${pages.length} / categories ${categories.length} / tags ${tags.length} / media ${media.length}`);
 
   // --- slug 対応表。人が編集した newSlug が正なので、足りない分だけ足す。
+  const externalMap = JSON.parse(await readFile(EXTERNAL_MAP_PATH, 'utf8')).images;
   const slugMap = JSON.parse(await readFile(SLUG_MAP_PATH, 'utf8'));
   const fallbackSlug = (wp) => `post-${wp.id}`;
   for (const post of posts) {
@@ -411,6 +482,7 @@ async function main() {
   const toMarkdown = (html, slug) => {
     let out = stripHost(html);
     collectSrcsetPaths(out, report); // turndown が落とす前に拾う
+    out = rehostExternalImages(out, externalMap, report, slug);
     out = stripEzToc(out);
     out = accordionsToDetails(out);
     out = amazonIframesToLinks(out, report);
@@ -481,6 +553,11 @@ async function main() {
     console.log(`  画像 ${uploadPaths.length} 件を確認中...`);
     const { downloaded, cached } = await downloadUploads(uploadPaths, report);
     console.log(`  取得 ${downloaded} 件 / 既存 ${cached} 件 / 取得できず ${report.missingUploads.length} 件`);
+
+    const host = Object.values(externalMap).filter((e) => e.action === 'host').length;
+    console.log(`  他サイトから引き取る画像 ${host} 件を確認中...`);
+    const ext = await downloadExternalImages(externalMap, report);
+    console.log(`  取得 ${ext.downloaded} 件 / 既存 ${ext.cached} 件 / 取得できず ${report.missingExternalImages.length} 件`);
   }
 
   // --- リダイレクト
@@ -524,6 +601,11 @@ async function main() {
   console.log(`落としたショートコード: ${report.droppedShortcodes.length} 件`);
   for (const s of report.droppedShortcodes) console.log(`  ${s.slug}: ${s.shortcode}`);
   console.log(`Amazon リンクに変換: ${report.amazonConverted.length} 件 (ASIN 不明 ${report.amazonWithoutAsin.length} 件)`);
+  console.log(`他サイトの画像: 自サイトに配置 ${report.hostedExternalImages.length} 件 / 本文から削除 ${report.removedExternalImages.length} 件`);
+  if (report.unknownExternalImages.length) {
+    console.log(`  ⚠ 対応表に無い外部画像 ${report.unknownExternalImages.length} 件 (そのまま残した)。external-images.json に追記すること:`);
+    for (const u of report.unknownExternalImages) console.log(`    ${u.slug}: ${u.url}`);
+  }
   console.log(`解決できなかった内部リンク: ${report.unresolvedInternalLinks.length} 件`);
   for (const l of report.unresolvedInternalLinks) console.log(`  ${l.slug}: ${l.path}`);
   console.log(`\n詳細は ${REPORT_PATH}`);

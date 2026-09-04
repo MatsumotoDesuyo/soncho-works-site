@@ -79,7 +79,7 @@ oldUrl: "/2019/11/10/ps4%E3%81%AE%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E
 
 #### METAL GEAR SOLID V: THE PHANTOM PAIN
 
-![](http://cdn-ak.f.st-hatena.com/images/fotolife/s/shibadog55/20150619/20150619061452.png)
+![](/images/external/cdn-ak-f-st-hatena-com-20150619061452-7cb9ada1.png)
 
 ステルスゲームの金字塔であるメタルギアソリッドシリーズの最終作。
 
@@ -90,8 +90,6 @@ oldUrl: "/2019/11/10/ps4%E3%81%AE%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E
 [Amazon で見る (B01L8EOOY4)](https://www.amazon.co.jp/dp/B01L8EOOY4?tag=soncho00-22)
 
 #### Alien: Isolation
-
-![](https://s3.gaming-cdn.com/images/products/305/screenshot/alien-isolation-wallpaper-5.jpg)
 
 Alien: Isolation
 
@@ -111,7 +109,7 @@ Alien: Isolation
 
 #### WATCH DOGS
 
-![](https://i.ytimg.com/vi/FcMRkyoHKeA/maxresdefault.jpg)
+![](/images/external/i-ytimg-com-maxresdefault-ee7c9136.jpg)
 
 天才ハッカーであるエイデンがITで管理されたシカゴの街の悪党や巨大企業を倒すオープンワールドステルスゲーム。
 
@@ -125,7 +123,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 #### WATCH DOGS2
 
-![](https://store-images.s-microsoft.com/image/apps.38484.69997608528322872.06dc9610-5c4e-484e-b028-58ad215e637a.29a8afc9-c3c7-4b3d-8e9f-f1b2858db4f8?mode=scale&q=90&h=1080&w=1920)
+![](/images/external/store-images-s-microsoft-com-apps-38484-69997608528322872-06dc9610-5c-dba0615b.jpg)
 
 前作WATCH DOGSから規模、作りこみ共にパワーアップした続編。めちゃくちゃ面白いです。
 
@@ -139,7 +137,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 #### HITMAN
 
-![「hitman スクリーンショット」の画像検索結果](https://sm.ign.com/ign_jp/screenshot/default/hitman-the-complete-first-season_cjyf.jpg)
+![「hitman スクリーンショット」の画像検索結果](/images/external/sm-ign-com-hitman-the-complete-first-season_cjyf-1cf738b5.jpg)
 
 多くのステルスゲームが敵から見えないようにするのに対し、HITMANは変装することで場に馴染み怪しまれないようにするゲームです。
 
@@ -152,8 +150,6 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 [Amazon で見る (B07DKMC7S2)](https://www.amazon.co.jp/dp/B07DKMC7S2?tag=soncho00-22)
 
 #### HITMAN2
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sucFO-7tzDQzREVsKaOu2IbZC9JgufzyxR9YeYJhZrlP7lGCsg&s)
 
 上記のHITMANの続編。HITMANから正当に進化してマップや仕掛けがスケールアップました。
 
@@ -176,15 +172,13 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 #### PSYCHO BREAK 2
 
-![](http://ha-navi.com/wp-content/uploads/2017/10/2017101719061022-1024x576.jpg)
-
 PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き面白さは健在。
 
 ずいぶん遊びやすくなったので前作を楽しめるか不安ならこっちからプレイするのもアリ。
 
 #### GHOST RECON WILDLANDS
 
-![](https://kentworld-blog.com/wp-content/uploads/2017/03/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%82%B3%E3%83%B3-%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%83%A9%E3%83%B3%E3%82%BA_20170318222115.jpg)
+![](/images/external/kentworld-blog-com-ゴーストリコン-ワイルドランズ_20170318222115-53a4740e.jpg)
 
 4人一組のチームでボリビアの麻薬カルテルを潰すオープンワールドシューティング。
 
@@ -206,7 +200,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### プレイグ テイル -イノセンス-
 
-![](https://livedoor.blogimg.jp/games084/imgs/d/b/db86b830.png)
+![](/images/external/livedoor-blogimg-jp-db86b830-1a4d2b35.png)
 
 中世ヨーロッパのネズミと疫病が蔓延する世界で、宗教裁判から追われる姉弟の生き残りを賭けた逃避行を描いたステルスアドベンチャーゲーム。
 
@@ -236,7 +230,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### ASSASSIN’S CREED Syndicate
 
-![](http://thumbnail.image.shashinkan.rakuten.co.jp/shashinkan-core/showPhoto/?pkey=452e4ca29b0a1dee5d5a52d6051472ff05153e93.06.2.2.2j1.jpg)
+![](/images/external/thumbnail-image-shashinkan-rakuten-co-jp-image-b4b35769.jpg)
 
 自由な世界を目指すアサシンとなって世界をコントロールしようとするテンプル騎士団を倒すステルスオープンワールドアクション。
 
@@ -252,7 +246,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### DAYS GONE
 
-![「days gone　野党」の画像検索結果](https://revimg03.kakaku.k-img.com/images/smartphone/icv/review_460380_f.jpg)
+![「days gone　野党」の画像検索結果](/images/external/revimg03-kakaku-k-img-com-review_460380_f-8277110f.jpg)
 
 ステルス要素高めのゾンビのサバイバルオープンワールドアクションです。
 
@@ -273,15 +267,11 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### The Last of Us
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4yqhRNkRMdEGn_IR_lB-QrykTupxQooLH8KgwxKBETjr-5Cou&s)
-
 これもゾンビゲー。荒廃した世界で少女と二人で生き抜くサバイバルアドベンチャー。一本道のゲームです。
 
 資源管理が厳しいためできるだけステルスで敵を排除することになります。
 
 #### バットマン：アーカム・ナイト
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChHL9ax6BpBmZQT-bY-6o55KmXlA54wXBlOgjiSAX379VsrxI&s)
 
 バットマンになってヴィラン達を倒すキャラゲー。バットマンかっこいい。
 
@@ -293,7 +283,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### METAL GEAR SURVIVE
 
-![](https://sce.scene7.com/is/image/playstation/pljm80230_s01?$JAcat_CapL$)
+![](/images/external/sce-scene7-com-pljm80230_s01-e6ed85f4.png)
 
 ゾンビで荒廃した世界に転送された兵士が帰還を目指してサバイバルするゲーム。
 
@@ -303,8 +293,6 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### REPUBLIQUE
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJe0nz1c4-NOtRmdOyTsvUjA8JGixFUj3QDYWyTr9fb1YwZOX3&s)
-
 監視カメラを操作して女の子を施設から逃がすゲーム。
 
 TPSでもFPSでもない特殊な視点のゲームで好みは分かれると思いますが、ステルスゲームとして完成度が高いと思います。
@@ -312,8 +300,6 @@ TPSでもFPSでもない特殊な視点のゲームで好みは分かれると�
 あと女の子がかわいい。
 
 #### Marvel’s Spider-Man
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IEeqiWDkBdH1UZDpeELiZB6BtMGGQpsXSqRqZbIqXSrTePC-3g&s)
 
 スパイダーマンがめちゃかっこいいキャラゲー。システムが全体的にバットマンアーカムシリーズに似てる。
 
@@ -323,7 +309,7 @@ TPSでもFPSでもない特殊な視点のゲームで好みは分かれると�
 
 #### Tomb Raider: Definitive Edition
 
-![](https://ks-product.com/wp/wp-content/uploads/1602099_614644648609757_1851046303_o.jpg)
+![](/images/external/ks-product-com-1602099_614644648609757_1851046303_o-b0237041.jpg)
 
 秘宝を探すアドベンチャーゲーム。インディージョンズのゲーム版ですね。主にロマンを楽しむゲームです。トレジャーハンターとなって伝説の秘宝を探し求めながら、同じく秘宝を探す悪いやつらと戦います。
 
@@ -350,7 +336,7 @@ TPSでもFPSでもない特殊な視点のゲームで好みは分かれると�
 
 #### Dishonored:Dearh of the Outsider
 
-![](https://steamcdn-a.akamaihd.net/steam/apps/217980/ss_8bbf0d429e30c63bc745a290749b3df4bfac2fc2.1920x1080.jpg?t=1529533164)
+![](/images/external/steamcdn-a-akamaihd-net-ss_8bbf0d429e30c63bc745a290749b3df4bfac2-b1275525.jpg)
 
 魔法、銃、剣を駆使して攻略する一人称ステルスゲーム。
 
@@ -370,7 +356,7 @@ PS3で出たバットマンアーカムシリーズ2作品のリメイク。
 
 #### マフィアⅢ
 
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/H/Hamasukei/20161029/20161029231009.jpg)
+![](/images/external/cdn-ak-f-st-hatena-com-20161029231009-824ae51a.jpg)
 
 記憶が定かでないのですが、ステルスまわりがしっかり作られていたような気が…すみません…
 
@@ -378,7 +364,7 @@ PS3で出たバットマンアーカムシリーズ2作品のリメイク。
 
 #### Thief
 
-![](https://www.famitsu.com/images/000/055/097/l_539996e30afab.jpg)
+![](/images/external/www-famitsu-com-l_539996e30afab-82b5b619.jpg)
 
 盗賊になってなんちゃらみたいな作品だったと思うのですが、申し訳ないけどあんまし記憶に残っていないです。多分管理人的にはイマイチだったのでしょう。
 

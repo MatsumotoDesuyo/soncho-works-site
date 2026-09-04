@@ -32,7 +32,7 @@ Xamarin.Android SfCharで検索してインストール。下の画像では上�
 
 ログインしたら、トップページからGet License Keyを選んで、PlatformをXamarinにして、プロジェクト名を入れて、取得。
 
-![](https://help.syncfusion.com/common/essential-studio/licensing/licensing-images/generate-license.png)
+![](/images/external/help-syncfusion-com-generate-license-d610b6cb.png)
 
 取得したライセンスキーは無くさないようにメールアドレスにも転送を指定しておきましょう。
 
