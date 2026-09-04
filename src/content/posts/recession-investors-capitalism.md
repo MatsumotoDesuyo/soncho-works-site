@@ -4,7 +4,6 @@ description: "リーマンショックについて考えていて、投資家と
 pubDate: "2019-10-24T22:54:17+09:00"
 updatedDate: "2019-10-24T22:54:26+09:00"
 categories: ["reading"]
-tags: ["資本主義"]
 wpId: 204
 oldUrl: "/2019/10/24/%E4%B8%8D%E6%99%AF%E6%B0%97%E3%81%A8%E6%8A%95%E8%B3%87%E5%AE%B6%E3%81%A8%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%EF%BC%9A%E3%83%A1%E3%83%A2/"
 ---

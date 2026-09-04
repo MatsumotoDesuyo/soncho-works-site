@@ -4,7 +4,6 @@ description: "結論：パスモをマイナポイントに登録するには、
 pubDate: "2020-08-22T21:54:09+09:00"
 updatedDate: "2020-08-22T21:55:09+09:00"
 categories: ["daily-fix"]
-tags: ["MKCZ374E", "パスモ", "マイナポイント"]
 heroImage: "/wp-content/uploads/2020/08/Screenshot_20200822-133730-e1598095123786.png"
 wpId: 536
 oldUrl: "/2020/08/22/mainapoint-pasmo/"

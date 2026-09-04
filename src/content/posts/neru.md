@@ -4,7 +4,6 @@ description: "※ネル推しの勝手な妄想です。解釈違いだとして
 pubDate: "2024-05-26T23:42:16+09:00"
 updatedDate: "2024-05-26T23:57:19+09:00"
 categories: ["stories"]
-tags: ["ブルアカ"]
 wpId: 1081
 oldUrl: "/2024/05/26/neru/"
 ---

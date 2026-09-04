@@ -12,7 +12,6 @@ const posts = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     categories: z.array(z.string()).default([]),
-    tags: z.array(z.string()).default([]),
     heroImage: z.string().optional(),
     wpId: z.number().optional(),
     /** 旧 WordPress の permalink。public/_redirects の生成元と対応する。 */

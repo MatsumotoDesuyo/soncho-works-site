@@ -4,7 +4,6 @@ description: "こんにちは。ゲムヲ使いのそんちょーです。 Mr.�
 pubDate: "2019-10-01T12:17:38+09:00"
 updatedDate: "2019-10-01T12:26:40+09:00"
 categories: ["games"]
-tags: ["ゲムヲ", "大乱闘スマッシュブラザーズSP"]
 heroImage: "/wp-content/uploads/2019/10/Mr.ゲームウォッチ_SP_横スマ.jpg"
 wpId: 120
 oldUrl: "/2019/10/01/%E3%82%B2%E3%83%A0%E3%83%B2%E3%81%AF%E3%81%AA%E3%81%9C%E6%92%83%E5%A2%9C%E9%9B%A3%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E3%82%8B%E3%81%AE%E3%81%8B/"
