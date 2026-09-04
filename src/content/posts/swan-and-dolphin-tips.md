@@ -60,6 +60,33 @@ oldUrl: "/2020/03/02/%E3%82%B9%E3%83%AF%E3%83%B3%E3%82%A2%E3%83%B3%E3%83%89%E3%8
 -   くし
 -   スリッパ
 
+<div class="carousel" role="region" aria-label="客室のアメニティーの写真" tabindex="0">
+  <figure>
+    <img src="/wp-content/uploads/2020/03/DSC_0048-scaled.jpeg" alt="" loading="lazy" decoding="async">
+    <figcaption>洗面台の脇のコーヒーメーカーとスターバックスのコーヒー。青いラベルの水が一日にもらえる分です。</figcaption>
+  </figure>
+  <figure>
+    <img src="/wp-content/uploads/2020/03/DSC_0049-scaled.jpeg" alt="" loading="lazy" decoding="async">
+    <figcaption>クローゼット。ハンガーのほかにアイロン台と荷物用のラックが入っています。</figcaption>
+  </figure>
+  <figure>
+    <img src="/wp-content/uploads/2020/03/DSC_0050-scaled.jpeg" alt="" loading="lazy" decoding="async">
+    <figcaption>洗面台。ティッシュと石鹸、タオル。</figcaption>
+  </figure>
+  <figure>
+    <img src="/wp-content/uploads/2020/03/DSC_0051-scaled.jpeg" alt="" loading="lazy" decoding="async">
+    <figcaption>シャンプー・コンディショナー・ボディークリーム。歯ブラシと髭剃りはここにもありません。</figcaption>
+  </figure>
+  <figure>
+    <img src="/wp-content/uploads/2020/03/DSC_0052-scaled.jpeg" alt="" loading="lazy" decoding="async">
+    <figcaption>バスタブとトイレ。</figcaption>
+  </figure>
+  <figure>
+    <img src="/wp-content/uploads/2020/03/DSC_0053-scaled.jpeg" alt="" loading="lazy" decoding="async">
+    <figcaption>客室全体。ベッドが二つとテレビ。</figcaption>
+  </figure>
+</div>
+
 コーヒーメーカーの中にコーヒーの粉を入れないことで、給湯器として使うことができました。
 
 私はシャンプーを持ち込んだのですが、フロリダの水質のせいでイマイチ泡立ちませんでした。

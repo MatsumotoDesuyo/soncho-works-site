@@ -1,6 +1,6 @@
 ---
 title: "<が&lt;になる"
-description: "WordPressでSyntax Highlighterを使っていた、”<&#82 …"
+description: "WordPress + Syntax Highlighter で「<」が「&lt;」に変換されてしまう問題を、段落を Classic Paragraph 経由でカスタム HTML に変換して解決する手順。"
 pubDate: "2019-12-27T02:08:35+09:00"
 updatedDate: "2019-12-27T02:12:12+09:00"
 categories: ["dev-notes"]
