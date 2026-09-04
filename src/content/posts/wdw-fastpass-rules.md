@@ -4,7 +4,6 @@ description: "https://www.disboards.com/threads/fp-faq-addendum- …"
 pubDate: "2020-01-13T02:34:42+09:00"
 updatedDate: "2020-02-19T15:17:09+09:00"
 categories: ["disney"]
-tags: ["FPP"]
 wpId: 378
 oldUrl: "/2020/01/13/wdw%E3%81%AEfp%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%83%AB%E3%83%BC%E3%83%AB/"
 ---

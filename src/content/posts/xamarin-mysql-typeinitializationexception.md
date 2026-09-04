@@ -4,7 +4,6 @@ description: "XamarinでMySqlを使おうとしたらこのエラーが出て2�
 pubDate: "2019-10-12T16:46:00+09:00"
 updatedDate: "2019-10-12T16:50:17+09:00"
 categories: ["dev-notes"]
-tags: ["MySQL"]
 heroImage: "/wp-content/uploads/2019/10/image-11.png"
 wpId: 188
 oldUrl: "/2019/10/12/xamarin%E3%81%A7system-typeinitializationexception-the-type-initializer-for-mysql-data-mysqlclient-replication-replicationmanager-threw-an-exception/"

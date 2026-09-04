@@ -4,7 +4,6 @@ description: "AndroidとXamarin.AndroidでWeightSumの仕様が少し違いま�
 pubDate: "2019-07-18T10:28:28+09:00"
 updatedDate: "2019-07-18T10:32:55+09:00"
 categories: ["dev-notes"]
-tags: ["Android", "SetWeightSum", "Xamarin"]
 wpId: 87
 oldUrl: "/2019/07/18/xamarin%E3%81%A7setweightsum/"
 ---

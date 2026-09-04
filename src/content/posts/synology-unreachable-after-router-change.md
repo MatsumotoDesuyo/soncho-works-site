@@ -4,7 +4,6 @@ description: "失敗話です。 Synologyを固定IPにするのに、ルータ�
 pubDate: "2019-07-11T00:33:24+09:00"
 updatedDate: "2019-07-11T00:59:17+09:00"
 categories: ["home-server"]
-tags: ["Synology", "ルーター", "繋がらない"]
 wpId: 44
 oldUrl: "/2019/07/11/%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92%E8%B2%B7%E3%81%84%E6%9B%BF%E3%81%88%E3%81%9F%E3%82%89synology%E3%81%8C%E7%B9%8B%E3%81%8C%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E8%A9%B1/"
 ---

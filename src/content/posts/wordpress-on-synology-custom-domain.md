@@ -4,7 +4,6 @@ description: "早速ですが、このブログはSynology上で手動インス�
 pubDate: "2019-07-05T22:48:19+09:00"
 updatedDate: "2019-10-31T17:29:47+09:00"
 categories: ["home-server"]
-tags: ["Synology", "WordPress"]
 wpId: 12
 oldUrl: "/2019/07/05/synology%E4%B8%8A%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E4%B8%8A%E3%81%92%E3%82%8B%E3%81%AE%E3%81%8C%E5%A4%A7%E5%A4%89%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%A3%E3%81%A6%E3%81%84%E3%81%86%E8%A9%B1/"
 ---

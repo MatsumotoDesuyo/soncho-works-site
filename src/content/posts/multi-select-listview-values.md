@@ -4,7 +4,6 @@ description: "環境はXamarin.Android。 3行目のとこです。 CheckedItemP
 pubDate: "2019-07-18T17:42:15+09:00"
 updatedDate: "2019-07-18T17:42:16+09:00"
 categories: ["dev-notes"]
-tags: ["ListView", "複数"]
 wpId: 98
 oldUrl: "/2019/07/18/%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9Elistview%E3%81%AE%E5%80%A4%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/"
 ---

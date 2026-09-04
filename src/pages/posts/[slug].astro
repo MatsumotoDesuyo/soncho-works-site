@@ -36,11 +36,5 @@ const { Content, headings } = await render(post);
     <TableOfContents headings={headings} />
 
     <Content />
-
-    {
-      post.data.tags.length > 0 && (
-        <p class="tag-list">タグ: {post.data.tags.join(' / ')}</p>
-      )
-    }
   </article>
 </BaseLayout>

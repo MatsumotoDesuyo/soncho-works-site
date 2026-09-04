@@ -360,9 +360,3 @@ a {
 .category-list a {
   text-decoration: none;
 }
-
-.tag-list {
-  margin-top: 2rem;
-  font-size: 0.82rem;
-  color: var(--muted);
-}
