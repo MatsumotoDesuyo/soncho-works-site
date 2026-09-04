@@ -60,6 +60,13 @@ const main = async () => {
   check(rssItems === postFiles.length, 'RSS に全記事が入っている', `RSS ${rssItems} 件 / 記事 ${postFiles.length} 件`);
   check(rss.startsWith('<?xml'), 'RSS が XML として妥当な書き出し');
 
+  // robots.txt は「サイトマップの所在をクローラーに示す」ためのものなので、sitemap と一緒に見る (#11)。
+  check(files.has('robots.txt'), '/robots.txt がある');
+  const robots = await readFile(join(DIST, 'robots.txt'), 'utf8').catch(() => '');
+  const sitemapLine = robots.match(/^Sitemap:.*$/m)?.[0]?.trim() ?? '(Sitemap 行なし)';
+  check(sitemapLine === `Sitemap: ${site.url}/sitemap-index.xml`,
+    'robots.txt がサイトマップの絶対 URL を示している', sitemapLine);
+
   // --- 3. 404 ページ (not_found_handling: 404-page が返す実体)
   check(files.has('404.html'), '/404.html がある');
 
