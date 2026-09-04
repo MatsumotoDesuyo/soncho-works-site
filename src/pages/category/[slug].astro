@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostList from '../../components/PostList.astro';
+import { allCategories, categoryName, getSortedPosts } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getSortedPosts();
+  return allCategories.map((category) => ({
+    params: { slug: category.slug },
+    props: { posts: posts.filter((post) => post.data.categories.includes(category.slug)) },
+  }));
+}
+
+const { slug } = Astro.params;
+const { posts } = Astro.props;
+const name = categoryName(slug!);
+---
+
+<BaseLayout title={`カテゴリー: ${name}`} description={`${name} の記事一覧`}>
+  <h1>{name}</h1>
+  <p class="meta">{posts.length} 件</p>
+  <PostList posts={posts} />
+</BaseLayout>

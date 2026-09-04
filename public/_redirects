@@ -1,0 +1,82 @@
+# 旧 WordPress の URL を引き継ぐ。scripts/import-wp.mjs が生成するので直接編集しない。
+
+# 記事 57 件: /YYYY/MM/DD/<旧 slug>/ -> /posts/<新 slug>/
+/2025/01/11/%E6%9C%89%E5%88%A9%E7%9B%A4%E9%9D%A2%E3%81%AE%E6%BC%94%E5%87%BA%E5%AE%B6%EF%BC%81%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%AF%E6%A5%BD%E3%81%97%E3%81%84/  /posts/splatoon-space-shooter/  301
+/2024/05/26/neru/  /posts/neru/  301
+/2022/10/01/otegaru-hikari/  /posts/otegaru-hikari/  301
+/2022/06/04/excel-test-tool/  /posts/excel-test-tool/  301
+/2022/06/03/my-ahk/  /posts/my-ahk/  301
+/2022/05/22/unity-avator/  /posts/unity-avator/  301
+/2022/04/30/%E3%80%90%E8%A7%A3%E6%B6%88%E6%B8%88%E3%80%91%E3%80%8C%E6%99%82%E8%A8%88%E3%81%8C%E9%81%85%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%8D%E3%81%A8%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%A6/  /posts/clock-is-behind-no-internet/  301
+/2021/07/06/vb6%E3%81%AEimagekit%E3%81%A7%E7%89%B9%E5%AE%9A%E3%81%AE%E7%94%BB%E5%83%8F%E3%82%92%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%80%E3%81%A8%E8%90%BD%E3%81%A1%E3%82%8B%E4%BB%B6/  /posts/vb6-imagekit-image-crash/  301
+/2021/06/19/truedbgrid%E3%81%A7%E5%85%A8%E8%A7%92%E6%96%87%E5%AD%97%E3%81%8C%E5%85%A5%E5%8A%9B%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AF%E3%80%81refresh%E3%81%8C%E6%82%AA%E3%81%95/  /posts/truedbgrid-refresh-fullwidth-input/  301
+/2021/06/13/%E7%99%BE%E5%9D%87%E3%81%A0%E3%81%91%E3%81%A7%E3%83%9E%E3%82%B0%E3%83%8D%E3%83%83%E3%83%88%E3%83%86%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B1%E3%83%BC%E3%82%B9%E4%BD%9C%E3%81%A3%E3%81%9F/  /posts/diy-magnet-tissue-case/  301
+/2021/06/11/%E3%80%8E%E5%AE%9F%E5%8A%9B%E3%82%82%E9%81%8B%E3%81%AE%E5%86%85%E3%80%8F%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E5%BF%98%E5%82%99%E9%8C%B2%E3%80%82/  /posts/tyranny-of-merit-notes/  301
+/2020/12/12/miband5-watchface/  /posts/miband5-watchface/  301
+/2020/12/06/diga-to-regza-seeqvault/  /posts/diga-to-regza-seeqvault/  301
+/2020/12/06/diga-seeqvault/  /posts/diga-seeqvault/  301
+/2020/10/19/mobilepasmo-refund/  /posts/mobilepasmo-refund/  301
+/2020/08/22/mainapoint-pasmo/  /posts/mainapoint-pasmo/  301
+/2020/06/19/%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%83%91%E3%82%B9%E3%83%A2%E3%81%AB%E3%83%87%E3%83%93%E3%83%83%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%A7%E3%81%8D%E3%81%9F/  /posts/mobile-pasmo-debit-card/  301
+/2020/03/02/%E3%82%B9%E3%83%AF%E3%83%B3%E3%82%A2%E3%83%B3%E3%83%89%E3%83%89%E3%83%AB%E3%83%95%E3%82%A3%E3%83%B3%E3%81%A7%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%84%E3%81%9F%E6%96%B9%E3%81%8C%E3%81%84%E3%81%84/  /posts/swan-and-dolphin-tips/  301
+/2020/02/28/riseoftheresistance-boardingpass/  /posts/riseoftheresistance-boardingpass/  301
+/2020/02/19/wdw-fp-tier/  /posts/wdw-fp-tier/  301
+/2020/02/14/graduation-work/  /posts/graduation-work/  301
+/2020/01/28/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B0-%E3%83%86%E3%82%A4%E3%83%AB-%E3%82%A4%E3%83%8E%E3%82%BB%E3%83%B3%E3%82%B9/  /posts/stealth-review-a-plague-tale-innocence/  301
+/2020/01/13/wdw%E3%81%AEfp%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%83%AB%E3%83%BC%E3%83%AB/  /posts/wdw-fastpass-rules/  301
+/2020/01/13/wdw%E3%81%AEfp%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%83%AB%E3%83%BC%E3%83%AB%EF%BC%9A%E7%BF%BB%E8%A8%B3/  /posts/wdw-fastpass-rules-translation/  301
+/2020/01/07/%E8%A7%A3%E6%B1%BA%E6%B3%95%EF%BC%9A%E3%82%A8%E3%83%A9%E3%83%BCmkcz355e%E5%88%A9%E7%94%A8%E8%80%85%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%BD%E3%83%95%E3%83%88%E3%81%AE%E3%83%A9/  /posts/mkcz355e-client-library-load-error/  301
+/2020/01/07/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%81%8B%E3%82%89%E8%A6%8B%E3%81%9F%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%89%E3%82%AA%E3%83%87%E3%83%83%E3%82%BB%E3%82%A4/  /posts/stealth-review-assassins-creed-odyssey/  301
+/2020/01/03/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E4%B8%8A%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88%E3%81%AE%E4%BD%9C/  /posts/windows-network-file-shortcut/  301
+/2019/12/31/%E6%8D%95%E6%8D%89%EF%BC%86%E9%9A%A0%E8%94%BD%E8%A8%93%E7%B7%B4%E3%81%AE%E5%88%86%E6%9E%90-%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%88%E3%83%AA%E3%82%AC%E3%83%BC/  /posts/world-trigger-detection-evasion-analysis/  301
+/2019/12/27/%E3%81%8Clt%E3%81%AB%E3%81%AA%E3%82%8B/  /posts/less-than-sign-becomes-lt-entity/  301
+/2019/12/27/nfc%E3%82%BF%E3%82%B0%E3%81%8B%E3%82%89%E8%87%AA%E5%88%86%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%B5%B7%E5%8B%95%E3%81%99%E3%82%8B/  /posts/launch-android-app-from-nfc-tag/  301
+/2019/12/26/%E6%9D%B1%E6%B4%8B%E3%81%A8%E8%A5%BF%E6%B4%8B%E3%81%AEai%E3%81%AE%E6%89%B1%E3%81%84%E3%81%AE%E9%81%95%E3%81%84%E3%81%AE%E6%A0%B9%E5%BA%95/  /posts/why-japan-treats-ai-as-friend/  301
+/2019/12/26/%E5%A4%A7%E8%A6%8F%E6%A8%A1%E4%BE%B5%E6%94%BB%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3%EF%BC%9A%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%88%E3%83%AA%E3%82%AC%E3%83%BC/  /posts/world-trigger-large-scale-invasion-timeline/  301
+/2019/12/21/android-studio%E3%81%A7%E5%8F%B3%E7%AB%AF%E6%8A%98%E3%82%8A%E8%BF%94%E3%81%97/  /posts/android-studio-word-wrap/  301
+/2019/11/20/%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AF%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%80%80xamarin-android/  /posts/xamarin-android-app-not-installed/  301
+/2019/11/10/ps4%E3%81%AE%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%AE%E7%B4%B9%E4%BB%8B%E3%81%A8%E3%80%81%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%A7/  /posts/ps4-stealth-games/  301
+/2019/10/30/xamarin-android%E3%81%A7sfchart/  /posts/xamarin-android-sfchart/  301
+/2019/10/30/xamarin-android%E3%81%A7%E3%82%B0%E3%83%A9%E3%83%95%E8%A1%A8%E7%A4%BA/  /posts/xamarin-android-chart/  301
+/2019/10/27/fragment%E3%81%AF%E6%97%A7%E5%9E%8B%E5%BC%8F%E3%81%A7%E3%81%99-this-class-is-obsoleted-in-this-android-platform/  /posts/fragment-obsoleted-android-platform/  301
+/2019/10/24/%E4%B8%8D%E6%99%AF%E6%B0%97%E3%81%A8%E6%8A%95%E8%B3%87%E5%AE%B6%E3%81%A8%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%EF%BC%9A%E3%83%A1%E3%83%A2/  /posts/recession-investors-capitalism/  301
+/2019/10/22/%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%EF%BC%9A2019-10%E6%9C%88/  /posts/books-read-2019-10/  301
+/2019/10/22/%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC2019-9%E6%9C%88/  /posts/books-read-2019-09/  301
+/2019/10/12/xamarin%E3%81%A7system-typeinitializationexception-the-type-initializer-for-mysql-data-mysqlclient-replication-replicationmanager-threw-an-exception/  /posts/xamarin-mysql-typeinitializationexception/  301
+/2019/10/02/lan%E3%81%A7synology%E3%81%AB%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%99%E3%82%8B/  /posts/synology-custom-domain-on-lan/  301
+/2019/10/01/unity%E3%81%AEproject%E3%82%92%E7%A7%BB%E8%BB%A2%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/  /posts/unity-project-migration/  301
+/2019/10/01/%E3%82%B2%E3%83%A0%E3%83%B2%E3%81%AF%E3%81%AA%E3%81%9C%E6%92%83%E5%A2%9C%E9%9B%A3%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E3%82%8B%E3%81%AE%E3%81%8B/  /posts/mr-game-and-watch-kill-difficulty/  301
+/2019/08/21/unable-to-start-adb-server/  /posts/unable-to-start-adb-server/  301
+/2019/07/29/animation%E3%82%92%E6%96%B0%E5%BD%A2%E5%BC%8F%E3%81%AB%E3%81%99%E3%82%8B/  /posts/unity-animation-new-format/  301
+/2019/07/29/animation%E3%82%92animator%E3%81%AEmotion%E3%81%AB%E3%82%A2%E3%82%BF%E3%83%83%E3%83%81%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84/  /posts/unity-animation-attach-to-animator-motion/  301
+/2019/07/23/vector3%E3%82%92%E8%A4%87%E8%A3%BD%E3%81%99%E3%82%8B/  /posts/unity-clone-vector3/  301
+/2019/07/18/%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9Elistview%E3%81%AE%E5%80%A4%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/  /posts/multi-select-listview-values/  301
+/2019/07/18/xamarin%E3%81%A7setlayoutparams/  /posts/xamarin-setlayoutparams/  301
+/2019/07/18/xamarin%E3%81%A7setweightsum/  /posts/xamarin-setweightsum/  301
+/2019/07/12/mydns%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%80%81synology%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%99%E3%82%8B/  /posts/mydns-domain-for-synology/  301
+/2019/07/11/synology%E5%86%85%E3%81%A7%E5%9B%BA%E5%AE%9Aip%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%97%E3%81%AA%E3%81%84%E6%96%B9%E3%81%8C%E3%81%84%E3%81%84%E3%81%A8%E3%81%84%E3%81%86%E8%A9%B1/  /posts/synology-avoid-static-ip/  301
+/2019/07/11/synology%E3%82%92%E5%9B%BA%E5%AE%9Aip%E3%81%AB%E3%81%99%E3%82%8B%E5%85%89bb%E3%83%A6%E3%83%8B%E3%83%83%E3%83%88/  /posts/synology-static-ip-hikari-bb-unit/  301
+/2019/07/11/%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92%E8%B2%B7%E3%81%84%E6%9B%BF%E3%81%88%E3%81%9F%E3%82%89synology%E3%81%8C%E7%B9%8B%E3%81%8C%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E8%A9%B1/  /posts/synology-unreachable-after-router-change/  301
+/2019/07/05/synology%E4%B8%8A%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E4%B8%8A%E3%81%92%E3%82%8B%E3%81%AE%E3%81%8C%E5%A4%A7%E5%A4%89%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%A3%E3%81%A6%E3%81%84%E3%81%86%E8%A9%B1/  /posts/wordpress-on-synology-custom-domain/  301
+
+# カテゴリーアーカイブ (日本語 slug のものだけ URL が変わる)
+/category/%E6%9C%AA%E5%88%86%E9%A1%9E/  /category/uncategorized/  301
+/category/mr-%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%A2%E3%83%B3%E3%83%89%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81/  /category/mr-game-and-watch/  301
+/category/%E6%9C%AC/  /category/books/  301
+/category/%E7%A4%BE%E4%BC%9A/  /category/society/  301
+/category/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E3%83%BC%E3%83%A0/  /category/stealth-games/  301
+/category/%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%88%E3%83%AA%E3%82%AC%E3%83%BC/  /category/world-trigger/  301
+/category/%E8%80%83%E3%81%88%E3%81%9F%E3%81%93%E3%81%A8/  /category/thoughts/  301
+/category/%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88/  /category/disney-resort/  301
+/category/%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/  /category/technology/  301
+/category/%E3%83%96%E3%83%AB%E3%82%A2%E3%82%AB/  /category/blue-archive/  301
+
+# フィードとサイトマップ、旧サイトの綴り違い
+/feed/  /rss.xml  301
+/sitemap.xml  /sitemap-index.xml  301
+/profile/  /profiel/  301
+
+# Search Console の所有権確認ファイル。Workers Static Assets は既定で
+# *.html を拡張子なしの URL へ 307 で飛ばすため、そのままだと確認 URL が
+# 200 を返さない。200 のリライトで、その URL のまま中身を返す。
+/google07299d5f1a873207.html  /google07299d5f1a873207  200
