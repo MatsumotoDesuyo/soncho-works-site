@@ -37,6 +37,10 @@ scripts/external-images.json 引き取った画像の出典の記録
 他サイトの画像はホットリンクしない。自分で用意するか、`public/images/external/` に置いて
 `scripts/external-images.json` に出典を記録する。
 
+写真を何枚かまとめて見せたいときは、本文に `<div class="carousel">` を書いてその中に `<figure>` を
+並べる (`src/styles/global.css` の `.prose .carousel`)。横スクロールと `scroll-snap` だけで動くので
+JS は要らない。縦横比は 3:2 に切り揃えられる。
+
 ## 気をつけること
 
 WordPress からの移行 (#1) で踏んだ落とし穴のうち、いま触ると壊れるもの。

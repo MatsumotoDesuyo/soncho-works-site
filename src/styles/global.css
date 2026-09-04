@@ -164,6 +164,54 @@ a {
   height: auto;
 }
 
+/* --- 本文の写真カルーセル ---
+   旧サイトで MetaSlider が出していた写真群の置き換え (#7)。JS を持たないので、
+   横スクロールと scroll-snap だけで成立させる。JS が無効でも全枚数が見える。
+   記事側は <div class="carousel"> の中に <figure> を並べた生 HTML で書く。 */
+
+.prose .carousel {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  /* iOS で慣性スクロールの途中に指を離してもスナップ先で止まるようにする */
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  padding-bottom: 0.5rem;
+  /* スクロールバーを細く出しておく。矢印ボタンが無いぶん、
+     「まだ右に続く」ことを伝える手がかりを消さない。 */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  scroll-snap-type: x mandatory;
+}
+
+/* 1 枚を画面いっぱいにせず、右に次の写真を覗かせる。矢印もドットも持たないので、
+   「まだ右に続く」ことを伝えるのはこの覗きとスクロールバーだけになる。
+   min() の 420px は PC で写真が間延びしないための頭打ち。 */
+.prose .carousel > figure {
+  flex: 0 0 min(78%, 420px);
+  scroll-snap-align: start;
+  margin: 0;
+}
+
+/* 6 枚のうち DSC_0049 (クローゼット) だけが縦長で、他は横長。比を揃えないと
+   flex コンテナの高さが縦長 1 枚に引きずられ、横長 5 枚が余白に浮く。
+   縦長は上下が切れるので、寄せ位置を変えたいときは object-position で調整する。 */
+.prose .carousel > figure > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.prose .carousel figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
 .prose pre {
   background: var(--code-bg);
   padding: 0.8rem 1rem;
