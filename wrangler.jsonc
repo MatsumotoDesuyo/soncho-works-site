@@ -3,9 +3,14 @@
 // この repo に Cloudflare の秘密は置かない。
 //
 // プレビューの workers.dev へのデプロイも platform が行う。アプリ側で wrangler deploy は実行しない。
+//
+// workers_dev: どのホスト名で公開するかは platform の判断 (配信経路の所有)。ただし wrangler が
+// デプロイのたびに読む値なので、宣言はこのファイルに置く。2026-09-04 のカットオーバー完了に伴い、
+// 本番 (soncho-works.com) と同じ内容が workers.dev からも見える状態を閉じた (重複コンテンツの回避)。
 {
   "name": "soncho-works-site",
   "compatibility_date": "2026-09-03",
+  "workers_dev": false,
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page"
