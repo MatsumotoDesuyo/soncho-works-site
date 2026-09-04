@@ -79,7 +79,7 @@ oldUrl: "/2019/11/10/ps4%E3%81%AE%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9%E3%82%B2%E
 
 #### METAL GEAR SOLID V: THE PHANTOM PAIN
 
-![](/images/external/cdn-ak-f-st-hatena-com-20150619061452-7cb9ada1.png)
+![](/images/external/hatena-7cb9ad.png)
 
 ステルスゲームの金字塔であるメタルギアソリッドシリーズの最終作。
 
@@ -109,7 +109,7 @@ Alien: Isolation
 
 #### WATCH DOGS
 
-![](/images/external/i-ytimg-com-maxresdefault-ee7c9136.jpg)
+![](/images/external/youtube-ee7c91.jpg)
 
 天才ハッカーであるエイデンがITで管理されたシカゴの街の悪党や巨大企業を倒すオープンワールドステルスゲーム。
 
@@ -123,7 +123,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 #### WATCH DOGS2
 
-![](/images/external/store-images-s-microsoft-com-apps-38484-69997608528322872-06dc9610-5c-dba0615b.jpg)
+![](/images/external/microsoft-dba061.jpg)
 
 前作WATCH DOGSから規模、作りこみ共にパワーアップした続編。めちゃくちゃ面白いです。
 
@@ -137,7 +137,7 @@ PS4で出ているUBIのゲームの中で一番ステルス性を重視して�
 
 #### HITMAN
 
-![「hitman スクリーンショット」の画像検索結果](/images/external/sm-ign-com-hitman-the-complete-first-season_cjyf-1cf738b5.jpg)
+![「hitman スクリーンショット」の画像検索結果](/images/external/ign-1cf738.jpg)
 
 多くのステルスゲームが敵から見えないようにするのに対し、HITMANは変装することで場に馴染み怪しまれないようにするゲームです。
 
@@ -178,7 +178,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### GHOST RECON WILDLANDS
 
-![](/images/external/kentworld-blog-com-ゴーストリコン-ワイルドランズ_20170318222115-53a4740e.jpg)
+![](/images/external/kentworld-53a474.jpg)
 
 4人一組のチームでボリビアの麻薬カルテルを潰すオープンワールドシューティング。
 
@@ -200,7 +200,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### プレイグ テイル -イノセンス-
 
-![](/images/external/livedoor-blogimg-jp-db86b830-1a4d2b35.png)
+![](/images/external/livedoor-1a4d2b.png)
 
 中世ヨーロッパのネズミと疫病が蔓延する世界で、宗教裁判から追われる姉弟の生き残りを賭けた逃避行を描いたステルスアドベンチャーゲーム。
 
@@ -230,7 +230,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### ASSASSIN’S CREED Syndicate
 
-![](/images/external/thumbnail-image-shashinkan-rakuten-co-jp-image-b4b35769.jpg)
+![](/images/external/rakuten-b4b357.jpg)
 
 自由な世界を目指すアサシンとなって世界をコントロールしようとするテンプル騎士団を倒すステルスオープンワールドアクション。
 
@@ -246,7 +246,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### DAYS GONE
 
-![「days gone　野党」の画像検索結果](/images/external/revimg03-kakaku-k-img-com-review_460380_f-8277110f.jpg)
+![「days gone　野党」の画像検索結果](/images/external/kakaku-827711.jpg)
 
 ステルス要素高めのゾンビのサバイバルオープンワールドアクションです。
 
@@ -283,7 +283,7 @@ PSYCHO BREAKの続編。前作からとっつきにくさをいくらか抜き�
 
 #### METAL GEAR SURVIVE
 
-![](/images/external/sce-scene7-com-pljm80230_s01-e6ed85f4.png)
+![](/images/external/playstation-e6ed85.png)
 
 ゾンビで荒廃した世界に転送された兵士が帰還を目指してサバイバルするゲーム。
 
@@ -309,7 +309,7 @@ TPSでもFPSでもない特殊な視点のゲームで好みは分かれると�
 
 #### Tomb Raider: Definitive Edition
 
-![](/images/external/ks-product-com-1602099_614644648609757_1851046303_o-b0237041.jpg)
+![](/images/external/ks-product-b02370.jpg)
 
 秘宝を探すアドベンチャーゲーム。インディージョンズのゲーム版ですね。主にロマンを楽しむゲームです。トレジャーハンターとなって伝説の秘宝を探し求めながら、同じく秘宝を探す悪いやつらと戦います。
 
@@ -336,7 +336,7 @@ TPSでもFPSでもない特殊な視点のゲームで好みは分かれると�
 
 #### Dishonored:Dearh of the Outsider
 
-![](/images/external/steamcdn-a-akamaihd-net-ss_8bbf0d429e30c63bc745a290749b3df4bfac2-b1275525.jpg)
+![](/images/external/steam-b12755.jpg)
 
 魔法、銃、剣を駆使して攻略する一人称ステルスゲーム。
 
@@ -356,7 +356,7 @@ PS3で出たバットマンアーカムシリーズ2作品のリメイク。
 
 #### マフィアⅢ
 
-![](/images/external/cdn-ak-f-st-hatena-com-20161029231009-824ae51a.jpg)
+![](/images/external/hatena-824ae5.jpg)
 
 記憶が定かでないのですが、ステルスまわりがしっかり作られていたような気が…すみません…
 
@@ -364,7 +364,7 @@ PS3で出たバットマンアーカムシリーズ2作品のリメイク。
 
 #### Thief
 
-![](/images/external/www-famitsu-com-l_539996e30afab-82b5b619.jpg)
+![](/images/external/famitsu-82b5b6.jpg)
 
 盗賊になってなんちゃらみたいな作品だったと思うのですが、申し訳ないけどあんまし記憶に残っていないです。多分管理人的にはイマイチだったのでしょう。
 
