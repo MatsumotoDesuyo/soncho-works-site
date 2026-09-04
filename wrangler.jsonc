@@ -2,7 +2,7 @@
 // 本番のデプロイは platform が Cloudflare 側で Workers Builds (Git 連携) を設定する。
 // この repo に Cloudflare の秘密は置かない。
 //
-// プレビュー: npx wrangler deploy  (ローカルの Cloudflare 認証で workers.dev に上がる)
+// プレビューの workers.dev へのデプロイも platform が行う。アプリ側で wrangler deploy は実行しない。
 {
   "name": "soncho-works-site",
   "compatibility_date": "2026-09-03",

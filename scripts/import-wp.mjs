@@ -96,6 +96,23 @@ const unescapeUrl = (u) =>
 // turndown に渡す前に、Markdown へ落とすと壊れる WordPress 固有のブロックを
 // 意味の変わらない素の HTML に置き換えておく。
 
+/**
+ * srcset が指すサイズ違いの画像を配信対象に加える。
+ *
+ * turndown は img を Markdown 画像にするので srcset は生成物から消えるが、D3 の
+ * 「外部からの直リンクも切れない」は旧サイトが公開していた URL 空間が基準なので、
+ * 参照されていたサイズ違いも同じパスで置く必要がある。
+ * stripHost 済みの HTML に対して呼ぶこと (自サイトの URL だけが相対パスになっている)。
+ */
+function collectSrcsetPaths(html, report) {
+  for (const attr of html.matchAll(/srcset="([^"]+)"/g)) {
+    for (const candidate of attr[1].split(',')) {
+      const url = candidate.trim().split(/\s+/)[0];
+      if (url.startsWith('/wp-content/uploads/')) report.uploadPaths.add(decode(url));
+    }
+  }
+}
+
 /** Easy Table of Contents がレンダリング時に差し込む目次。Astro 側で作り直すので捨てる。 */
 function stripEzToc(html) {
   return html
@@ -280,28 +297,35 @@ async function exists(path) {
   }
 }
 
+/**
+ * 移行元は 1GB メモリの古い VPS で同時アクセスに弱い (platform の実地調査)。
+ * 並列で叩かず、1 件ずつ間隔を空けて取る。取得済みのものは待たずに飛ばす。
+ */
+const FETCH_INTERVAL_MS = 200;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 async function downloadUploads(paths, report) {
   let downloaded = 0;
   let cached = 0;
-  const queue = [...paths];
-  const worker = async () => {
-    for (let path = queue.pop(); path; path = queue.pop()) {
-      const dest = join(UPLOADS_DIR, path.replace('/wp-content/uploads/', ''));
-      if (await exists(dest)) {
-        cached++;
-        continue;
-      }
-      const res = await fetch(`https://soncho-works.com${encodeURI(path)}`).catch((e) => ({ ok: false, status: e.code ?? 'ERR' }));
-      if (!res.ok) {
-        report.missingUploads.push({ path, status: res.status });
-        continue;
-      }
+  for (const path of paths) {
+    const dest = join(UPLOADS_DIR, path.replace('/wp-content/uploads/', ''));
+    if (await exists(dest)) {
+      cached++;
+      continue;
+    }
+    const res = await fetch(`https://soncho-works.com${encodeURI(path)}`).catch((e) => ({
+      ok: false,
+      status: e.code ?? 'ERR',
+    }));
+    if (res.ok) {
       await mkdir(dirname(dest), { recursive: true });
       await writeFile(dest, Buffer.from(await res.arrayBuffer()));
       downloaded++;
+    } else {
+      report.missingUploads.push({ path, status: res.status });
     }
-  };
-  await Promise.all(Array.from({ length: 8 }, worker));
+    await sleep(FETCH_INTERVAL_MS);
+  }
   return { downloaded, cached };
 }
 
@@ -386,6 +410,7 @@ async function main() {
 
   const toMarkdown = (html, slug) => {
     let out = stripHost(html);
+    collectSrcsetPaths(out, report); // turndown が落とす前に拾う
     out = stripEzToc(out);
     out = accordionsToDetails(out);
     out = amazonIframesToLinks(out, report);
@@ -502,6 +527,13 @@ async function main() {
   console.log(`解決できなかった内部リンク: ${report.unresolvedInternalLinks.length} 件`);
   for (const l of report.unresolvedInternalLinks) console.log(`  ${l.slug}: ${l.path}`);
   console.log(`\n詳細は ${REPORT_PATH}`);
+
+  // 本文が参照している画像が 1 枚でも欠けたら失敗させる。生成物 (dist) の HTML だけを
+  // 見ていると srcset のサイズ違いは検出できないので、関門はここに置く。
+  if (report.missingUploads.length > 0) {
+    console.error(`\n本文が参照する画像 ${report.missingUploads.length} 件を取得できなかった。`);
+    process.exit(1);
+  }
 }
 
 main().catch((e) => {
