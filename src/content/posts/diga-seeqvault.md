@@ -3,7 +3,7 @@ title: "DIGAでは初期設定だと外付けHDDがSeeQVault規格にならな�
 description: "こんにちは。そんちょーと申します。 一番伝えたいことを始めに言うと、DIGAにSeeQVault対応 …"
 pubDate: "2020-12-06T10:58:45+09:00"
 updatedDate: "2020-12-06T11:35:05+09:00"
-categories: ["uncategorized"]
+categories: ["daily-fix"]
 wpId: 624
 oldUrl: "/2020/12/06/diga-seeqvault/"
 ---

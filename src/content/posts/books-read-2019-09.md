@@ -3,7 +3,7 @@ title: "読んだ本:2019-9月"
 description: "『昭和史戦前編』半藤一利 『昭和史戦後編』 半藤一利 『僕らはそれに抵抗できない』アダム・オルター"
 pubDate: "2019-10-22T08:46:44+09:00"
 updatedDate: "2019-10-22T09:03:58+09:00"
-categories: ["books"]
+categories: ["reading"]
 wpId: 199
 oldUrl: "/2019/10/22/%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC2019-9%E6%9C%88/"
 ---

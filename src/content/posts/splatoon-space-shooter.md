@@ -3,7 +3,7 @@ title: "有利盤面の演出家！スペースシューターは楽しいぞ！
 description: "スプラトゥーンのブキの中でもスペースシューターがめちゃくちゃ使っていて楽しいので言語化をしたいと思い …"
 pubDate: "2025-01-11T05:27:28+09:00"
 updatedDate: "2025-01-11T05:27:29+09:00"
-categories: ["uncategorized"]
+categories: ["games"]
 wpId: 1101
 oldUrl: "/2025/01/11/%E6%9C%89%E5%88%A9%E7%9B%A4%E9%9D%A2%E3%81%AE%E6%BC%94%E5%87%BA%E5%AE%B6%EF%BC%81%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%AF%E6%A5%BD%E3%81%97%E3%81%84/"
 ---

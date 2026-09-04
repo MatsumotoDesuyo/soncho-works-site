@@ -3,7 +3,7 @@ title: "DIGAのSeeQVaultデータをREGZAに持ってこれた。"
 description: "はい。こんにちはそんちょーと申します。 言いたいことはタイトルのとおりです。DIGAに繋いでいたSe …"
 pubDate: "2020-12-06T11:33:15+09:00"
 updatedDate: "2020-12-06T11:34:38+09:00"
-categories: ["uncategorized"]
+categories: ["daily-fix"]
 wpId: 614
 oldUrl: "/2020/12/06/diga-to-regza-seeqvault/"
 ---

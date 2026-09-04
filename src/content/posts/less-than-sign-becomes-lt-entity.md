@@ -3,7 +3,7 @@ title: "<が&lt;になる"
 description: "WordPressでSyntax Highlighterを使っていた、”<&#82 …"
 pubDate: "2019-12-27T02:08:35+09:00"
 updatedDate: "2019-12-27T02:12:12+09:00"
-categories: ["wordpress"]
+categories: ["dev-notes"]
 tags: ["Syntax Highlighter"]
 wpId: 310
 oldUrl: "/2019/12/27/%E3%81%8Clt%E3%81%AB%E3%81%AA%E3%82%8B/"

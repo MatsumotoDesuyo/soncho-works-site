@@ -3,7 +3,7 @@ title: "【解消済】「時計が遅れています」と表示されてイン
 description: "しばらく使用していなかったPCでChromeを立ち上げたところ、時計が遅れていますと表示されてしまっ …"
 pubDate: "2022-04-30T20:14:03+09:00"
 updatedDate: "2022-05-22T16:20:10+09:00"
-categories: ["uncategorized"]
+categories: ["daily-fix"]
 heroImage: "/wp-content/uploads/2022/04/clock_is_late.png"
 wpId: 693
 oldUrl: "/2022/04/30/%E3%80%90%E8%A7%A3%E6%B6%88%E6%B8%88%E3%80%91%E3%80%8C%E6%99%82%E8%A8%88%E3%81%8C%E9%81%85%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%8D%E3%81%A8%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%A6/"

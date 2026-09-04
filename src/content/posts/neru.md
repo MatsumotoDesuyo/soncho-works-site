@@ -3,7 +3,7 @@ title: "【美甘ネル編】ブルアカ生徒の種族値を勝手に考える
 description: "※ネル推しの勝手な妄想です。解釈違いだとしても許してくださいごらん、ネルはみんなの心の中にいたんだね …"
 pubDate: "2024-05-26T23:42:16+09:00"
 updatedDate: "2024-05-26T23:57:19+09:00"
-categories: ["blue-archive"]
+categories: ["stories"]
 tags: ["ブルアカ"]
 wpId: 1081
 oldUrl: "/2024/05/26/neru/"

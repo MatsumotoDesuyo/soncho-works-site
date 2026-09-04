@@ -3,7 +3,7 @@ title: "UnityのProjectを移転する方法"
 description: "仕事で古いUnityプロジェクトを捨て、新しいUnityプロジェクトに必要な部分だけ移転するというこ …"
 pubDate: "2019-10-01T19:16:34+09:00"
 updatedDate: "2019-10-01T19:20:22+09:00"
-categories: ["unity"]
+categories: ["dev-notes"]
 heroImage: "/wp-content/uploads/2019/10/image-2.png"
 wpId: 149
 oldUrl: "/2019/10/01/unity%E3%81%AEproject%E3%82%92%E7%A7%BB%E8%BB%A2%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"

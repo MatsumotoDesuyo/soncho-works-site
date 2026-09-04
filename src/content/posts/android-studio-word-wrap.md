@@ -3,7 +3,7 @@ title: "Android Studioで右端折り返し"
 description: "Android Studioでコードを書いていて、ウィンドウの右を超えた時に右にスクロールされるので …"
 pubDate: "2019-12-21T18:56:36+09:00"
 updatedDate: "2019-12-21T18:56:40+09:00"
-categories: ["uncategorized"]
+categories: ["dev-notes"]
 wpId: 259
 oldUrl: "/2019/12/21/android-studio%E3%81%A7%E5%8F%B3%E7%AB%AF%E6%8A%98%E3%82%8A%E8%BF%94%E3%81%97/"
 ---

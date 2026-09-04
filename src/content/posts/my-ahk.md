@@ -3,7 +3,7 @@ title: "ぼくの考えた最強のキー配列(AutoHotKey)"
 description: "システムエンジニアをしているそんちょーと申します。 エンジニアをしているので年がら年中キーボードを触 …"
 pubDate: "2022-06-03T12:48:08+09:00"
 updatedDate: "2022-06-04T22:28:53+09:00"
-categories: ["uncategorized"]
+categories: ["made"]
 heroImage: "/wp-content/uploads/2022/06/keyboard.png"
 wpId: 713
 oldUrl: "/2022/06/03/my-ahk/"

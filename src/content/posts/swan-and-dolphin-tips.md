@@ -3,7 +3,7 @@ title: "スワンアンドドルフィンで知っておいた方がいいこと
 description: "先日ウォルトディズニーワールドリゾートのドルフィンホテルに泊まってきました。ここはウォルトディズニー …"
 pubDate: "2020-03-02T07:28:46+09:00"
 updatedDate: "2020-03-02T07:28:52+09:00"
-categories: ["disney-resort"]
+categories: ["disney"]
 tags: ["WDW", "アメニティ―"]
 heroImage: "/wp-content/uploads/2020/03/S__9371650.jpg"
 wpId: 490

@@ -3,7 +3,7 @@ title: "XamarinでsetLayoutParams"
 description: "Xamarin.AndroidでsetLayoutParamsをする方法です。 4行目のところです。 …"
 pubDate: "2019-07-18T10:43:52+09:00"
 updatedDate: "2019-07-18T10:45:50+09:00"
-categories: ["xamarin-android"]
+categories: ["dev-notes"]
 wpId: 92
 oldUrl: "/2019/07/18/xamarin%E3%81%A7setlayoutparams/"
 ---

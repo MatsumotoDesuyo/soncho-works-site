@@ -3,7 +3,7 @@ title: "MiBand5の壁紙を自作する方法"
 description: "Xiaomiのスマートウォッチ、コスパ高くていいですよね～。 こんにちは。そんちょーと申します。ここ …"
 pubDate: "2020-12-12T22:09:34+09:00"
 updatedDate: "2020-12-12T22:24:09+09:00"
-categories: ["dx"]
+categories: ["made"]
 heroImage: "/wp-content/uploads/2020/12/Screenshot_20201212-213015.png"
 wpId: 556
 oldUrl: "/2020/12/12/miband5-watchface/"

@@ -3,7 +3,7 @@ title: "LANでSynologyに独自ドメインでアクセスする"
 description: "この記事は、SynologyでWordPressサイトを独自ドメインで作るの一行程として書きました。 …"
 pubDate: "2019-10-02T15:31:43+09:00"
 updatedDate: "2019-10-31T17:27:51+09:00"
-categories: ["synology"]
+categories: ["home-server"]
 tags: ["DDNS"]
 wpId: 161
 oldUrl: "/2019/10/02/lan%E3%81%A7synology%E3%81%AB%E7%8B%AC%E8%87%AA%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%A7%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%99%E3%82%8B/"

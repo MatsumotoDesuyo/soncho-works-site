@@ -3,7 +3,7 @@ title: "Xamarin.Androidでグラフ表示"
 description: "XamarinにもAndroidにもグラフを表示するViewが無いので、グラフを使いたい場合はどこか …"
 pubDate: "2019-10-30T15:02:39+09:00"
 updatedDate: "2019-10-30T16:07:17+09:00"
-categories: ["xamarin-android"]
+categories: ["dev-notes"]
 wpId: 210
 oldUrl: "/2019/10/30/xamarin-android%E3%81%A7%E3%82%B0%E3%83%A9%E3%83%95%E8%A1%A8%E7%A4%BA/"
 ---

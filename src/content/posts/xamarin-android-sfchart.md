@@ -3,7 +3,7 @@ title: "Xamarin.AndroidでSfChart"
 description: "Xamarin.Androidでグラフ表示したい場合、SfChartがおすすめです。 Xamarin …"
 pubDate: "2019-10-30T16:01:37+09:00"
 updatedDate: "2019-10-30T16:06:30+09:00"
-categories: ["xamarin-android"]
+categories: ["dev-notes"]
 wpId: 212
 oldUrl: "/2019/10/30/xamarin-android%E3%81%A7sfchart/"
 ---

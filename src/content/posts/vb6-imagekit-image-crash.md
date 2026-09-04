@@ -3,7 +3,7 @@ title: "VB6のImageKitで特定の画像を読み込むと落ちる件"
 description: "こんにちは。そんちょーと申します。 先日VB6でImageKitで特定のjpg画像をloadImag …"
 pubDate: "2021-07-06T21:44:29+09:00"
 updatedDate: "2021-07-06T21:44:31+09:00"
-categories: ["uncategorized"]
+categories: ["dev-notes"]
 wpId: 687
 oldUrl: "/2021/07/06/vb6%E3%81%AEimagekit%E3%81%A7%E7%89%B9%E5%AE%9A%E3%81%AE%E7%94%BB%E5%83%8F%E3%82%92%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%80%E3%81%A8%E8%90%BD%E3%81%A1%E3%82%8B%E4%BB%B6/"
 ---

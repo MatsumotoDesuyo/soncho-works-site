@@ -3,7 +3,7 @@ title: "PASMOをマイナポイント登録できない時の対処法【MKCZ374
 description: "結論：パスモをマイナポイントに登録するには、パスモのサイト（ここ）でマイナポイント申請をしてからマイ …"
 pubDate: "2020-08-22T21:54:09+09:00"
 updatedDate: "2020-08-22T21:55:09+09:00"
-categories: ["dx"]
+categories: ["daily-fix"]
 tags: ["MKCZ374E", "パスモ", "マイナポイント"]
 heroImage: "/wp-content/uploads/2020/08/Screenshot_20200822-133730-e1598095123786.png"
 wpId: 536

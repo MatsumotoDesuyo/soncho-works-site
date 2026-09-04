@@ -3,7 +3,7 @@ title: "読んだ本：2019-10月"
 description: "『高校生からわかる資本論』池上彰 『凶器は壊れた黒の叫び』河野裕 『夜空の呪いに色はない』河野裕 『 …"
 pubDate: "2019-10-22T09:04:43+09:00"
 updatedDate: "2019-10-22T09:04:49+09:00"
-categories: ["books"]
+categories: ["reading"]
 wpId: 201
 oldUrl: "/2019/10/22/%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC%EF%BC%9A2019-10%E6%9C%88/"
 ---

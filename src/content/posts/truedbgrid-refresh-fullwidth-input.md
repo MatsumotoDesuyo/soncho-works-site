@@ -3,7 +3,7 @@ title: "TrueDbGridで全角文字が入力できなかったのは、Refresh()�
 description: "どうも、そんちょーと申します。 日頃からGrapeCityのTrueDbGridは動作がやや不安定で …"
 pubDate: "2021-06-19T09:05:33+09:00"
 updatedDate: "2021-06-19T09:05:36+09:00"
-categories: ["uncategorized"]
+categories: ["dev-notes"]
 wpId: 684
 oldUrl: "/2021/06/19/truedbgrid%E3%81%A7%E5%85%A8%E8%A7%92%E6%96%87%E5%AD%97%E3%81%8C%E5%85%A5%E5%8A%9B%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AF%E3%80%81refresh%E3%81%8C%E6%82%AA%E3%81%95/"
 ---
