@@ -1,5 +1,5 @@
 {
-  "_note": "旧 WordPress の本文が参照している他サイトの画像の扱い。人が確認する成果物。action=host は public/images/external/<file> に取り込んで本文の参照を差し替える。action=remove は本文から参照ごと落とす。キーは元の URL で、出典の記録も兼ねる。import-wp.mjs はこの表を読むだけで、既存の項目を書き換えない。",
+  "_note": "旧 WordPress の本文が参照していた他サイトの画像の扱いと、その出典の記録。action=host は public/images/external/<file> として自サイトで配信しているもので、キーがその画像の入手元 URL である。action=remove は本文から落としたもの。移行ツール (import-wp.mjs) は撤収したので、この表はもう入力ではなく記録として残している。帰属表示を付ける・画像を差し替えるときの出典はここを見ること。",
   "images": {
     "https://smashwiki.info/images/0/0b/Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E6%A8%AA%E3%82%B9%E3%83%9E.jpg": {
       "action": "host",

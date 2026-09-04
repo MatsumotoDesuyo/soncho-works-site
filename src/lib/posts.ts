@@ -9,7 +9,7 @@ export async function getSortedPosts(): Promise<Post[]> {
   return posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 }
 
-/** カテゴリーの slug から日本語の表示名を引く。import-wp.mjs が書き出した対応表を使う。 */
+/** カテゴリーの slug から日本語の表示名を引く。 */
 const nameBySlug = new Map(categories.map((c) => [c.slug, c.name]));
 
 export const categoryName = (slug: string): string => nameBySlug.get(slug) ?? slug;

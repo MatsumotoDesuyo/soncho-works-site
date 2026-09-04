@@ -4,4 +4,3 @@ dist/
 .wrangler/
 .env
 .env.*
-scripts/import-report.json
