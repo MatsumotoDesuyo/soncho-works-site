@@ -1,0 +1,188 @@
+{
+  "_note": "旧 WordPress の本文が参照している他サイトの画像の扱い。人が確認する成果物。action=host は public/images/external/<file> に取り込んで本文の参照を差し替える。action=remove は本文から参照ごと落とす。キーは元の URL で、出典の記録も兼ねる。import-wp.mjs はこの表を読むだけで、既存の項目を書き換えない。",
+  "images": {
+    "https://smashwiki.info/images/0/0b/Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E6%A8%AA%E3%82%B9%E3%83%9E.jpg": {
+      "action": "host",
+      "file": "smashwiki-info-Mr-ゲーム-ウォッチ_-SP-_横スマ-6083a1d1.jpg",
+      "usedIn": [
+        "mr-game-and-watch-kill-difficulty"
+      ]
+    },
+    "https://smashwiki.info/images/4/46/Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E6%A8%AA%E5%BC%B7.jpg": {
+      "action": "host",
+      "file": "smashwiki-info-Mr-ゲーム-ウォッチ_-SP-_横強-bf7b70ba.jpg",
+      "usedIn": [
+        "mr-game-and-watch-kill-difficulty"
+      ]
+    },
+    "https://smashwiki.info/images/c/c2/Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E4%B8%8B%E3%82%B9%E3%83%9E.jpg": {
+      "action": "host",
+      "file": "smashwiki-info-Mr-ゲーム-ウォッチ_-SP-_下スマ-9008e748.jpg",
+      "usedIn": [
+        "mr-game-and-watch-kill-difficulty"
+      ]
+    },
+    "https://smashwiki.info/images/thumb/4/4e/Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E4%B8%8B%E5%BC%B7.jpg/600px-Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E4%B8%8B%E5%BC%B7.jpg": {
+      "action": "host",
+      "file": "smashwiki-info-600px-Mr-ゲーム-ウォッチ_-SP-_下強-28f46171.jpg",
+      "usedIn": [
+        "mr-game-and-watch-kill-difficulty"
+      ]
+    },
+    "https://smashwiki.info/images/thumb/6/67/Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E4%B8%8A%E3%82%B9%E3%83%9E_%282%29.jpg/600px-Mr.%E3%82%B2%E3%83%BC%E3%83%A0%26%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81_%28SP%29_%E4%B8%8A%E3%82%B9%E3%83%9E_%282%29.jpg": {
+      "action": "host",
+      "file": "smashwiki-info-600px-Mr-ゲーム-ウォッチ_-SP-_上スマ_-2-3371a72d.jpg",
+      "usedIn": [
+        "mr-game-and-watch-kill-difficulty"
+      ]
+    },
+    "http://cdn-ak.f.st-hatena.com/images/fotolife/s/shibadog55/20150619/20150619061452.png": {
+      "action": "host",
+      "file": "cdn-ak-f-st-hatena-com-20150619061452-7cb9ada1.png",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://s3.gaming-cdn.com/images/products/305/screenshot/alien-isolation-wallpaper-5.jpg": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "取得できない (2026-09-04 時点で 000)"
+    },
+    "https://i.ytimg.com/vi/FcMRkyoHKeA/maxresdefault.jpg": {
+      "action": "host",
+      "file": "i-ytimg-com-maxresdefault-ee7c9136.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://store-images.s-microsoft.com/image/apps.38484.69997608528322872.06dc9610-5c4e-484e-b028-58ad215e637a.29a8afc9-c3c7-4b3d-8e9f-f1b2858db4f8?mode=scale&q=90&h=1080&w=1920": {
+      "action": "host",
+      "file": "store-images-s-microsoft-com-apps-38484-69997608528322872-06dc9610-5c-dba0615b.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://sm.ign.com/ign_jp/screenshot/default/hitman-the-complete-first-season_cjyf.jpg": {
+      "action": "host",
+      "file": "sm-ign-com-hitman-the-complete-first-season_cjyf-1cf738b5.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sucFO-7tzDQzREVsKaOu2IbZC9JgufzyxR9YeYJhZrlP7lGCsg&s": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "Google 画像検索のサムネイル。元画像の出所を URL から辿れない"
+    },
+    "http://ha-navi.com/wp-content/uploads/2017/10/2017101719061022-1024x576.jpg": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "取得できない (2026-09-04 時点で 404)"
+    },
+    "https://kentworld-blog.com/wp-content/uploads/2017/03/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%82%B3%E3%83%B3-%E3%83%AF%E3%82%A4%E3%83%AB%E3%83%89%E3%83%A9%E3%83%B3%E3%82%BA_20170318222115.jpg": {
+      "action": "host",
+      "file": "kentworld-blog-com-ゴーストリコン-ワイルドランズ_20170318222115-53a4740e.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://livedoor.blogimg.jp/games084/imgs/d/b/db86b830.png": {
+      "action": "host",
+      "file": "livedoor-blogimg-jp-db86b830-1a4d2b35.png",
+      "usedIn": [
+        "ps4-stealth-games",
+        "stealth-review-a-plague-tale-innocence"
+      ]
+    },
+    "http://thumbnail.image.shashinkan.rakuten.co.jp/shashinkan-core/showPhoto/?pkey=452e4ca29b0a1dee5d5a52d6051472ff05153e93.06.2.2.2j1.jpg": {
+      "action": "host",
+      "file": "thumbnail-image-shashinkan-rakuten-co-jp-image-b4b35769.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://revimg03.kakaku.k-img.com/images/smartphone/icv/review_460380_f.jpg": {
+      "action": "host",
+      "file": "revimg03-kakaku-k-img-com-review_460380_f-8277110f.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4yqhRNkRMdEGn_IR_lB-QrykTupxQooLH8KgwxKBETjr-5Cou&s": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "取得できない (2026-09-04 時点で 404)"
+    },
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChHL9ax6BpBmZQT-bY-6o55KmXlA54wXBlOgjiSAX379VsrxI&s": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "Google 画像検索のサムネイル。元画像の出所を URL から辿れない"
+    },
+    "https://sce.scene7.com/is/image/playstation/pljm80230_s01?$JAcat_CapL$": {
+      "action": "host",
+      "file": "sce-scene7-com-pljm80230_s01-e6ed85f4.png",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJe0nz1c4-NOtRmdOyTsvUjA8JGixFUj3QDYWyTr9fb1YwZOX3&s": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "取得できない (2026-09-04 時点で 404)"
+    },
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IEeqiWDkBdH1UZDpeELiZB6BtMGGQpsXSqRqZbIqXSrTePC-3g&s": {
+      "action": "remove",
+      "usedIn": [
+        "ps4-stealth-games"
+      ],
+      "reason": "取得できない (2026-09-04 時点で 404)"
+    },
+    "https://ks-product.com/wp/wp-content/uploads/1602099_614644648609757_1851046303_o.jpg": {
+      "action": "host",
+      "file": "ks-product-com-1602099_614644648609757_1851046303_o-b0237041.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://steamcdn-a.akamaihd.net/steam/apps/217980/ss_8bbf0d429e30c63bc745a290749b3df4bfac2fc2.1920x1080.jpg?t=1529533164": {
+      "action": "host",
+      "file": "steamcdn-a-akamaihd-net-ss_8bbf0d429e30c63bc745a290749b3df4bfac2-b1275525.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://cdn-ak.f.st-hatena.com/images/fotolife/H/Hamasukei/20161029/20161029231009.jpg": {
+      "action": "host",
+      "file": "cdn-ak-f-st-hatena-com-20161029231009-824ae51a.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://www.famitsu.com/images/000/055/097/l_539996e30afab.jpg": {
+      "action": "host",
+      "file": "www-famitsu-com-l_539996e30afab-82b5b619.jpg",
+      "usedIn": [
+        "ps4-stealth-games"
+      ]
+    },
+    "https://help.syncfusion.com/common/essential-studio/licensing/licensing-images/generate-license.png": {
+      "action": "host",
+      "file": "help-syncfusion-com-generate-license-d610b6cb.png",
+      "usedIn": [
+        "xamarin-android-sfchart"
+      ]
+    }
+  }
+}

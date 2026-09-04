@@ -20,16 +20,24 @@ soncho-works.com (apex) の静的サイト。Astro でビルドし、Cloudflare 
 ## 構成
 
 ```
-scripts/import-wp.mjs    旧 WordPress から取り込む (何度でも再実行できる)
-scripts/slug-map.json    日本語 slug -> ASCII slug の対応表。人が確認する成果物
-scripts/verify-build.mjs dist/ の検証
+scripts/import-wp.mjs      旧 WordPress から取り込む (何度でも再実行できる)
+scripts/slug-map.json      日本語 slug -> ASCII slug の対応表。人が確認する成果物
+scripts/external-images.json 他サイトの画像の扱い (自サイトに置く / 落とす)。同上
+scripts/verify-build.mjs   dist/ の検証
 src/site.config.ts       サイト名・URL・AdSense・Google タグ・privacy URL
 src/content/posts/       記事 57 件 (import-wp.mjs が生成)
 src/content/pages/       固定ページ 4 件 (同上)
 src/data/categories.json カテゴリー slug と日本語名 (同上)
 public/wp-content/uploads/ 旧サイトの画像。URL のパスを維持している
-public/_redirects        旧 permalink からの 301 (同上)
+public/images/external/    他サイトから引き取った画像 (同上)
+public/_redirects          旧 permalink からの 301 (同上)
 ```
+
+他サイトの画像はホットリンクしない。旧サイトが他所のサーバーの画像を直接参照していた
+27 か所は、出所を辿れるものを `public/images/external/` に引き取り、辿れないもの
+(消えている画像、Google 画像検索のサムネイル) は本文から落とした。扱いは
+`scripts/external-images.json` が持ち、キーが元の URL なので出典の記録も兼ねる。
+対応表に無い外部画像が現れた場合、`npm run import` は勝手に判断せずそのまま残して警告する。
 
 `src/content/`、`src/data/categories.json`、`public/wp-content/uploads/`、`public/_redirects` は
 `npm run import` の生成物なので直接編集しない。URL を変えたいときは `scripts/slug-map.json` を直して
